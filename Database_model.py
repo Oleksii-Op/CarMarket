@@ -1,14 +1,15 @@
-from sqlalchemy import (create_engine, Integer, String, DateTime,
-                        ForeignKey, Column)
-from sqlalchemy.orm import sessionmaker, relationship, backref, validates
-from sqlalchemy.ext.declarative import declarative_base
+from typing import Optional, List
 from datetime import datetime
 
-Base = declarative_base()
-engine = create_engine('sqlite:///database.db')
+from sqlalchemy import (create_engine, Integer, String, DateTime,
+                        ForeignKey, Column, Float, Boolean)
+from sqlalchemy.orm import (relationship, Mapped,
+                            validates, mapped_column)
+from sqlalchemy.ext.declarative import declarative_base
 
-Session = sessionmaker(bind=engine)
-session = Session()
+
+
+Base = declarative_base()
 
 
 class User(Base):
@@ -22,8 +23,34 @@ class User(Base):
     gender = Column(String(6), nullable=False)
     registered_on = Column(DateTime, default=datetime.now)
     updated_info_on = Column(DateTime,
-                        default=datetime.now,
-                        onupdate=datetime.now)
+                             default=datetime.now,
+                             onupdate=datetime.now)
+
+    tracks_sales: Mapped[List["Tracks_Sales"]] = relationship(
+        back_populates='user', cascade='all, delete-orphan')
+
+    @validates('gender')
+    def validate(self, key, gender):
+        if not isinstance(gender, str):
+            raise TypeError(
+                f'str object expected, '
+                f'got {gender.__class__.__name__} insted'
+            )
+
+        if not gender:
+            raise ValueError('Gender cannot be empty')
+
+        if gender.lower() not in ['male', 'female', 'other', 'unknown']:
+            raise ValueError('Wrong selection')
+
+    @validates('phone_number')
+    def validate_phone_number(self, key, number):
+        if not isinstance(number, str):
+            raise TypeError(
+                f'str object expected, '
+                f'got {number.__class__.__name__} insted')
+        elif len(number) > 20:
+            raise ValueError('Wrong number format')
 
     @validates('email_address')
     def validate_email_address(self, key, address):
@@ -33,13 +60,27 @@ class User(Base):
             raise ValueError(f"Email address is too short -> {len(address)}")
         return address
 
+    @validates('username')
+    def validate_username(self, key, username):
+        if len(username) < 6:
+            raise ValueError("Username can be at least 6 characters")
+        elif len(username) > 20:
+            raise ValueError("Username can be maximum 20 characters")
+        return username
+
+    @validates('name')
+    def validate_name(self, key, name):
+        if not name:
+            raise ValueError("Name cannot be empty")
+        if len(name) > 40:
+            raise ValueError("Name can be maximum 40 characters")
 
     def __init__(self,
                  username: str,
                  name: str,
                  email_address: str,
                  phone_number: str,
-                 gender: str) -> None:
+                 gender: str = 'Unknown') -> None:
         """
         Initialize the user with the provided details.
         Args:
@@ -51,13 +92,13 @@ class User(Base):
         Returns:
         None
         """
-        self._username = username
-        self._name = name
-        self._email_address = email_address
-        self._phone_number = phone_number
-        self._gender = gender
+        self.username = username
+        self.name = name
+        self.email_address = email_address
+        self.phone_number = phone_number
+        self.gender = gender
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return (f"User(username={self.username},"
                 f"name={self.name}, email_address={self.email_address},"
                 f"phone_number={self.phone_number}, gender={self.gender},"
@@ -68,11 +109,57 @@ class User(Base):
 class Address(Base):
     __tablename__ = 'addresses'
 
-    address_id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey('users.user_id'))
-    address = Column(String(255), nullable=False)
-    city = Column(String(255), nullable=False)
-    state = Column(String(255), nullable=False)
-    country = Column(String(255), nullable=False)
+    address_id: Mapped[int] = mapped_column(primary_key=True)
+    address: Mapped[str] = mapped_column(String(255), nullable=False)
+    city: Mapped[str] = mapped_column(String(40), nullable=False)
+    state: Mapped[str] = mapped_column(String(40), nullable=False)
+    zip_code: Mapped[int] = mapped_column(Integer, nullable=False)
+    country: Mapped[str] = mapped_column(String(40), nullable=False)
 
-    relationship('User', backref=backref('addresses', order_by=address_id))
+    def __repr__(self) -> str:
+        return (f"Address(address_id={self.address_id},"
+                f" address={self.address}, city={self.city},"
+                f" state={self.state}, zip_code={self.zip_code},"
+                f" country={self.country})")
+
+
+class Tracks_Sales(Base):
+    __tablename__ = 'tracks_sales'
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    maker: Mapped[str] = mapped_column(String(20), nullable=False)
+    model: Mapped[str] = mapped_column(String(20), nullable=False)
+    price: Mapped[int] = mapped_column(Integer, nullable=False)
+    condition: Mapped[str] = mapped_column(String(20), nullable=False)
+    fuel: Mapped[str] = mapped_column(String(20), nullable=False)
+    power_output: Mapped[int] = mapped_column(Integer, nullable=False)
+    gearbox: Mapped[str] = mapped_column(String(20), nullable=False)
+    mileage: Mapped[int] = mapped_column(Integer, nullable=False)
+    used: Mapped[bool] = mapped_column(Boolean, nullable=False)
+    color: Mapped[str] = mapped_column(String(20), nullable=False)
+    description: Mapped[Optional[str]] = mapped_column(String(255), nullable=False)
+
+    manufactured_date: Mapped[datetime] = mapped_column(DateTime,
+                                                        nullable=False)
+    engine_volume: Mapped[float] = mapped_column(Float,
+                                                 nullable=False)
+
+    average_consump: Mapped[float] = mapped_column(Float,
+                                                   nullable=False)
+
+    vin_number: Mapped[str] = mapped_column(String(40),
+                                            nullable=False, unique=True)
+
+    uploaded_on: Mapped[datetime] = mapped_column(DateTime, nullable=False,
+                                                  default=datetime.now)
+
+    updated_on: Mapped[datetime] = mapped_column(DateTime,
+                    nullable=False, default=datetime.now,
+                                    onupdate=datetime.now)
+
+    user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
+    user: Mapped["User"] = relationship(back_populates='tracks_sales')
+
+
+engine = create_engine('sqlite:///database.db', echo=True)
+Base.metadata.create_all(engine)
