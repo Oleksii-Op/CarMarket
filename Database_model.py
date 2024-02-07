@@ -6,9 +6,8 @@ from conn_to_database import select_database
 from sqlalchemy import (create_engine, Integer, String, DateTime,
                         ForeignKey, Column, Float, Boolean)
 from sqlalchemy.orm import (relationship, Mapped,
-                            validates, mapped_column)
-from sqlalchemy.ext.declarative import declarative_base
-
+                            validates, mapped_column, declarative_base)
+from sqlalchemy.ext.declarative import ConcreteBase
 
 Base = declarative_base()
 
@@ -27,20 +26,23 @@ class User(Base):
                              default=datetime.now,
                              onupdate=datetime.now)
 
+    vehicles: Mapped[List["Vehicle"]] = relationship(
+        back_populates='user', cascade='all, delete-orphan')
+
     tracks_sales: Mapped[List["Tracks_Sales"]] = relationship(
         back_populates='user', cascade='all, delete-orphan')
-
-    motorcycles_sales: Mapped[List["Motorcycles_Sales"]] = relationship(
-        back_populates='user', cascade='all, delete-orphan')
-
-    motorcycles_sales: Mapped[List["MotorCars"]] = relationship(
-        back_populates='user', cascade='all, delete-orphan')
-
-    motorcycles_sales: Mapped[List["ElectroCars"]] = relationship(
-        back_populates='user', cascade='all, delete-orphan')
-
-    motorcycles_sales: Mapped[List["Address"]] = relationship(
-        back_populates='user', cascade='all, delete-orphan')
+    #
+    # motorcycles_sales: Mapped[List["Motorcycles_Sales"]] = relationship(
+    #     back_populates='user', cascade='all, delete-orphan')
+    #
+    # motorcycles_sales: Mapped[List["MotorCars"]] = relationship(
+    #     back_populates='user', cascade='all, delete-orphan')
+    #
+    # motorcycles_sales: Mapped[List["ElectroCars"]] = relationship(
+    #     back_populates='user', cascade='all, delete-orphan')
+    #
+    # motorcycles_sales: Mapped[List["Address"]] = relationship(
+    #     back_populates='user', cascade='all, delete-orphan')
 
     @validates('gender')
     def validate(self, key, gender):
@@ -139,232 +141,114 @@ class Address(Base):
                 f" country={self.country})")
 
 
-class TracksSales(Base):
+class Vehicle(ConcreteBase, Base):
+    __tablename__ = 'vehicles'
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    maker: Mapped[str] = mapped_column(String(20), nullable=False)
+    model: Mapped[str] = mapped_column(String(20), nullable=False)
+    price: Mapped[int] = mapped_column(Integer, nullable=False)
+    condition: Mapped[str] = mapped_column(String(20), nullable=False)
+    fuel: Mapped[str] = mapped_column(String(20), nullable=False)
+    power_output: Mapped[int] = mapped_column(Integer, nullable=False)
+    gearbox: Mapped[str] = mapped_column(String(20), nullable=False)
+    mileage: Mapped[int] = mapped_column(Integer, nullable=False)
+    used: Mapped[bool] = mapped_column(Boolean, nullable=False)
+    color: Mapped[str] = mapped_column(String(20), nullable=False)
+    description: Mapped[Optional[str]] = mapped_column(String(255), nullable=False)
+    primary_registration: Mapped[datetime] = mapped_column(DateTime, nullable=False)
+    body_type: Mapped[str] = mapped_column(String(20), nullable=False)
+    wheel_drive: Mapped[str] = mapped_column(String(20), nullable=False)
+
+    interior: Mapped[str] = mapped_column(String(255))
+    audio_video_system: Mapped[str] = mapped_column(String(255))
+    wheels_discs: Mapped[str] = mapped_column(String(255))
+    safety_equip: Mapped[str] = mapped_column(String(255))
+    lights: Mapped[str] = mapped_column(String(255))
+    comfort_equip: Mapped[str] = mapped_column(String(255))
+    # Miscellaneous equpment
+    miscell_equip: Mapped[str] = mapped_column(String(255))
+    # Miscellaneous information
+    miscell_info: Mapped[str] = mapped_column(String(255))
+    number_of_seats: Mapped[int] = mapped_column(Integer)
+    number_of_doors: Mapped[int] = mapped_column(Integer)
+    empty_weight: Mapped[int] = mapped_column(Integer)
+    max_weight: Mapped[int] = mapped_column(Integer)
+
+    manufactured_date: Mapped[datetime] = mapped_column(DateTime,
+                                                        nullable=False)
+    engine_volume: Mapped[float] = mapped_column(Float,
+                                                 nullable=False)
+
+    average_consump: Mapped[float] = mapped_column(Float,
+                                                   nullable=False)
+
+    vin_number: Mapped[str] = mapped_column(String(40),
+                                            nullable=False, unique=True)
+
+    uploaded_on: Mapped[datetime] = mapped_column(DateTime, nullable=False,
+                                                  default=datetime.now)
+
+    updated_on: Mapped[datetime] = mapped_column(DateTime,
+                                                 nullable=False, default=datetime.now,
+                                                 onupdate=datetime.now)
+
+    user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
+    user: Mapped["User"] = relationship(back_populates='vehicles')
+
+    __mapper_args__ = {
+        'polymorphic_identity': 'vehicle',
+        'concrete': True}
+
+    def __repr__(self):
+        pass
+
+
+class TracksSales(Vehicle):
     __tablename__ = 'tracks_sales'
 
-    id: Mapped[int] = mapped_column(primary_key=True)
-    maker: Mapped[str] = mapped_column(String(20), nullable=False)
-    model: Mapped[str] = mapped_column(String(20), nullable=False)
-    price: Mapped[int] = mapped_column(Integer, nullable=False)
-    condition: Mapped[str] = mapped_column(String(20), nullable=False)
-    fuel: Mapped[str] = mapped_column(String(20), nullable=False)
-    power_output: Mapped[int] = mapped_column(Integer, nullable=False)
-    gearbox: Mapped[str] = mapped_column(String(20), nullable=False)
-    mileage: Mapped[int] = mapped_column(Integer, nullable=False)
-    used: Mapped[bool] = mapped_column(Boolean, nullable=False)
-    color: Mapped[str] = mapped_column(String(20), nullable=False)
-    description: Mapped[Optional[str]] = mapped_column(String(255), nullable=False)
-    primary_registration: Mapped[datetime] = mapped_column(DateTime, nullable=False)
-    body_type: Mapped[str] = mapped_column(String(20), nullable=False)
-    wheel_drive: Mapped[str] = mapped_column(String(20), nullable=False)
-
-    interior: Mapped[str] = mapped_column(String(255))
-    audio_video_system: Mapped[str] = mapped_column(String(255))
-    wheels_discs: Mapped[str] = mapped_column(String(255))
-    safety_equp: Mapped[str] = mapped_column(String(255))
-    lights: Mapped[str] = mapped_column(String(255))
-    comfort_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous equpment
-    miscell_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous information
-    miscell_info: Mapped[str] = mapped_column(String(255))
-    number_of_seats: Mapped[int] = mapped_column(Integer)
-    number_of_doors: Mapped[int] = mapped_column(Integer)
-    empty_weight: Mapped[int] = mapped_column(Integer)
-    max_weight: Mapped[int] = mapped_column(Integer)
-
-
-    manufactured_date: Mapped[datetime] = mapped_column(DateTime,
-                                                        nullable=False)
-    engine_volume: Mapped[float] = mapped_column(Float,
-                                                 nullable=False)
-
-    average_consump: Mapped[float] = mapped_column(Float,
-                                                   nullable=False)
-
-    vin_number: Mapped[str] = mapped_column(String(40),
-                                            nullable=False, unique=True)
-
-    uploaded_on: Mapped[datetime] = mapped_column(DateTime, nullable=False,
-                                                  default=datetime.now)
-
-    updated_on: Mapped[datetime] = mapped_column(DateTime,
-                                                 nullable=False, default=datetime.now,
-                                                 onupdate=datetime.now)
-
-    user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
+    id: Mapped[int] = mapped_column(ForeignKey("vehicles.id"), primary_key=True)
     user: Mapped["User"] = relationship(back_populates='tracks_sales')
 
-
-class ElectroCars(Base):
-    __tablename__ = "electro_cars"
-
-    id: Mapped[int] = mapped_column(primary_key=True)
-    maker: Mapped[str] = mapped_column(String(20), nullable=False)
-    model: Mapped[str] = mapped_column(String(20), nullable=False)
-    price: Mapped[int] = mapped_column(Integer, nullable=False)
-    condition: Mapped[str] = mapped_column(String(20), nullable=False)
-    fuel: Mapped[str] = mapped_column(String(20), nullable=False)
-    hybrid: Mapped[bool] = mapped_column(Boolean, nullable=False)
-    power_output: Mapped[int] = mapped_column(Integer, nullable=False)
-    gearbox: Mapped[str] = mapped_column(String(20), nullable=False)
-    description: Mapped[Optional[str]] = mapped_column(String(255), nullable=False)
-    mileage: Mapped[int] = mapped_column(Integer, nullable=False)
-    used: Mapped[bool] = mapped_column(Boolean, nullable=False)
-    color: Mapped[str] = mapped_column(String(20), nullable=False)
-    primary_registration: Mapped[datetime] = mapped_column(DateTime, nullable=False)
-    body_type: Mapped[str] = mapped_column(String(20), nullable=False)
-    wheel_drive: Mapped[str] = mapped_column(String(20), nullable=False)
-    battery_capacity: Mapped[int] = mapped_column(Integer, nullable=False)
-
-    interior: Mapped[str] = mapped_column(String(255))
-    audio_video_system: Mapped[str] = mapped_column(String(255))
-    wheels_discs: Mapped[str] = mapped_column(String(255))
-    safety_equp: Mapped[str] = mapped_column(String(255))
-    lights: Mapped[str] = mapped_column(String(255))
-    comfort_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous equpment
-    miscell_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous information
-    miscell_info: Mapped[str] = mapped_column(String(255))
-    number_of_seats: Mapped[int] = mapped_column(Integer)
-    number_of_doors: Mapped[int] = mapped_column(Integer)
-    empty_weight: Mapped[int] = mapped_column(Integer)
-    max_weight: Mapped[int] = mapped_column(Integer)
-
-    manufactured_date: Mapped[datetime] = mapped_column(DateTime,
-                                                        nullable=False)
-    engine_volume: Mapped[float] = mapped_column(Float,
-                                                 nullable=False)
-
-    average_consump: Mapped[float] = mapped_column(Float,
-                                                   nullable=False)
-
-    vin_number: Mapped[str] = mapped_column(String(40),
-                                            nullable=False, unique=True)
-
-    uploaded_on: Mapped[datetime] = mapped_column(DateTime, nullable=False,
-                                                  default=datetime.now)
-
-    updated_on: Mapped[datetime] = mapped_column(DateTime,
-                                                 nullable=False, default=datetime.now,
-                                                 onupdate=datetime.now)
-
-    user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
-    user: Mapped["User"] = relationship(back_populates='electro_cars')
-
-
-class Motorcycles(Base):
-    __tablename__ = 'motorcycles_sales'
-
-    id: Mapped[int] = mapped_column(primary_key=True)
-    maker: Mapped[str] = mapped_column(String(20), nullable=False)
-    model: Mapped[str] = mapped_column(String(20), nullable=False)
-    price: Mapped[int] = mapped_column(Integer, nullable=False)
-    condition: Mapped[str] = mapped_column(String(20), nullable=False)
-    fuel: Mapped[str] = mapped_column(String(20), nullable=False)
-    power_output: Mapped[int] = mapped_column(Integer, nullable=False)
-    gearbox: Mapped[str] = mapped_column(String(20), nullable=False)
-    description: Mapped[Optional[str]] = mapped_column(String(255), nullable=False)
-    mileage: Mapped[int] = mapped_column(Integer, nullable=False)
-    used: Mapped[bool] = mapped_column(Boolean, nullable=False)
-    color: Mapped[str] = mapped_column(String(20), nullable=False)
-    primary_registration: Mapped[datetime] = mapped_column(DateTime, nullable=False)
-    body_type: Mapped[str] = mapped_column(String(20), nullable=False)
-    wheel_drive: Mapped[str] = mapped_column(String(20), nullable=False)
-
-    interior: Mapped[str] = mapped_column(String(255))
-    audio_video_system: Mapped[str] = mapped_column(String(255))
-    wheels_discs: Mapped[str] = mapped_column(String(255))
-    safety_equp: Mapped[str] = mapped_column(String(255))
-    lights: Mapped[str] = mapped_column(String(255))
-    comfort_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous equpment
-    miscell_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous information
-    miscell_info: Mapped[str] = mapped_column(String(255))
-    number_of_seats: Mapped[int] = mapped_column(Integer)
-    number_of_doors: Mapped[int] = mapped_column(Integer)
-    empty_weight: Mapped[int] = mapped_column(Integer)
-    max_weight: Mapped[int] = mapped_column(Integer)
-
-    manufactured_date: Mapped[datetime] = mapped_column(DateTime,
-                                                        nullable=False)
-    engine_volume: Mapped[float] = mapped_column(Float,
-                                                 nullable=False)
-
-    average_consump: Mapped[float] = mapped_column(Float,
-                                                   nullable=False)
-
-    vin_number: Mapped[str] = mapped_column(String(40),
-                                            nullable=False, unique=True)
-
-    uploaded_on: Mapped[datetime] = mapped_column(DateTime, nullable=False,
-                                                  default=datetime.now)
-
-    updated_on: Mapped[datetime] = mapped_column(DateTime,
-                                                 nullable=False, default=datetime.now,
-                                                 onupdate=datetime.now)
-
-    user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
-    user: Mapped["User"] = relationship(back_populates='motorcycles_sales')
-
-class MotorCars(Base):
-    __tablename__ = "motorcars_sales"
-
-    id: Mapped[int] = mapped_column(primary_key=True)
-    maker: Mapped[str] = mapped_column(String(20), nullable=False)
-    model: Mapped[str] = mapped_column(String(20), nullable=False)
-    price: Mapped[int] = mapped_column(Integer, nullable=False)
-    condition: Mapped[str] = mapped_column(String(20), nullable=False)
-    fuel: Mapped[str] = mapped_column(String(20), nullable=False)
-    power_output: Mapped[int] = mapped_column(Integer, nullable=False)
-    gearbox: Mapped[str] = mapped_column(String(20), nullable=False)
-    description: Mapped[Optional[str]] = mapped_column(String(255), nullable=False)
-    mileage: Mapped[int] = mapped_column(Integer, nullable=False)
-    used: Mapped[bool] = mapped_column(Boolean, nullable=False)
-    color: Mapped[str] = mapped_column(String(20), nullable=False)
-    primary_registration: Mapped[datetime] = mapped_column(DateTime, nullable=False)
-    body_type: Mapped[str] = mapped_column(String(20), nullable=False)
-    wheel_drive: Mapped[str] = mapped_column(String(20), nullable=False)
-
-    interior: Mapped[str] = mapped_column(String(255))
-    audio_video_system: Mapped[str] = mapped_column(String(255))
-    wheels_discs: Mapped[str] = mapped_column(String(255))
-    safety_equp: Mapped[str] = mapped_column(String(255))
-    lights: Mapped[str] = mapped_column(String(255))
-    comfort_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous equpment
-    miscell_equip: Mapped[str] = mapped_column(String(255))
-    # Miscellaneous information
-    miscell_info: Mapped[str] = mapped_column(String(255))
-    number_of_seats: Mapped[int] = mapped_column(Integer)
-    number_of_doors: Mapped[int] = mapped_column(Integer)
-    empty_weight: Mapped[int] = mapped_column(Integer)
-    max_weight: Mapped[int] = mapped_column(Integer)
-
-    manufactured_date: Mapped[datetime] = mapped_column(DateTime,
-                                                        nullable=False)
-    engine_volume: Mapped[float] = mapped_column(Float,
-                                                 nullable=False)
-
-    average_consump: Mapped[float] = mapped_column(Float,
-                                                   nullable=False)
-
-    vin_number: Mapped[str] = mapped_column(String(40),
-                                            nullable=False, unique=True)
-
-    uploaded_on: Mapped[datetime] = mapped_column(DateTime, nullable=False,
-                                                  default=datetime.now)
-
-    updated_on: Mapped[datetime] = mapped_column(DateTime,
-                                                 nullable=False, default=datetime.now,
-                                                 onupdate=datetime.now)
-
-    user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
-    user: Mapped["User"] = relationship(back_populates='motorcars_sales')
+    __mapper_args__ = {
+        "polymorphic_identity": "tracks_sales",
+    }
 
 
 
-# engine = create_engine(select_database(), echo=True)
-# Base.metadata.create_all(engine)
+    def __repr__(self):
+        pass
+
+
+# class ElectroCars(Vehicle):
+#     __tablename__ = "electro_cars"
+#
+#     hybrid: Mapped[bool] = mapped_column(Boolean, nullable=False)
+#     battery_capacity: Mapped[int] = mapped_column(Integer, nullable=False)
+#
+#
+#
+#     def __repr__(self):
+#         pass
+#
+#
+# class Motorcycles(Vehicle):
+#     __tablename__ = 'motorcycles_sales'
+#
+#
+#
+#     def __repr__(self):
+#         pass
+#
+#
+# class MotorCars(Vehicle):
+#     __tablename__ = "motorcars_sales"
+
+
+
+    def __repr__(self):
+        pass
+
+
+engine = create_engine(select_database(), echo=True)
+Base.metadata.create_all(engine)
