@@ -10,7 +10,7 @@ def select_database() -> Union[str, None]:
        Returns a string representing the database connection.
        """
     database = input("Please enter the name of the "
-                     "database you want to use(SQLite or PostgreSQL: ").lower()
+                     "database you want to use(SQLite or PostgreSQL): ").lower()
 
     answers = ['sqlite', 'postgresql']
 
