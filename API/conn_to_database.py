@@ -17,13 +17,13 @@ def select_database() -> Union[str, None]:
     if database not in answers:
         msg = """Wrong input. Please choose one of the following databases:
         SQLite or PostgreSQL.
-        If you use another database, please refer to your database documentation.
+        If you use another SQL database, please refer to your database documentation.
                 """
         print(msg)
         raise ValueError(msg)
 
     if database == 'sqlite':
-        return 'sqlite:///database.db'
+        return 'sqlite:///carmarket.db'
     if database == 'postgresql':
         return connect_to_postgresql()
 
@@ -70,7 +70,7 @@ def connect_to_postgresql() -> str:
 
     connection_string = create_connection_string(username,
                                                  password, hostname, port, database_name)
-
+    print(connection_string)
     return connection_string
 
-# engine = create_engine('sqlite:///database.db', echo=True)
+
