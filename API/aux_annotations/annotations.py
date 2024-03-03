@@ -11,4 +11,4 @@ created_at = Annotated[datetime, mapped_column(
 # Postgres specific dialect, do not use it in SQLite
 updated_at = Annotated[datetime, mapped_column(
     server_default=text("TIMEZONE('utc', now())"),
-    onupdate=datetime.now())]
+    onupdate=datetime.now)]

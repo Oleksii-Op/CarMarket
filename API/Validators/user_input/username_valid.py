@@ -1,4 +1,5 @@
 from typing import Callable, Optional
+from string import punctuation
 
 
 def username_validate_decorator(func: Callable[[str], str]) -> Callable[[str], str]:
@@ -30,8 +31,10 @@ def username_validate_decorator(func: Callable[[str], str]) -> Callable[[str], s
             try:
                 if len(username) < 6:
                     raise ValueError("Username must be at least 6 characters")
-                elif len(username) > 20:
+                if len(username) > 20:
                     raise ValueError("Username must be maximum 20 characters")
+                if any(p in username for p in punctuation):
+                    raise ValueError("Username must not contain punctuation")
                 return func(username)
             except ValueError:
                 print("Error in username validation, please try again")
@@ -59,11 +62,17 @@ def username_validate_func(username: str, echo: Optional[bool] = False) -> str:
         try:
             if len(username) < 6:
                 raise ValueError("Username must be at least 6 characters")
-            elif len(username) > 20:
+            if len(username) > 20:
                 raise ValueError("Username must be maximum 20 characters")
+            if any(p in username for p in punctuation):
+                raise ValueError("Username must not contain punctuation")
+
             if echo:
                 print("\n\033[1;32;40mUsername has been saved, validation is successful\033[0m\n")
+
             return username
-        except ValueError:
+        except ValueError as error:
             print("\n\033[1;31;40mError in username validation, please try again\033[0m\n")
+            print("\n\033[1;31;40mError: ", error, "\033[0m\n")
+
             username = input('Please enter your username: ')

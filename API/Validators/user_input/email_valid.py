@@ -79,15 +79,13 @@ def email_validator_func(address: str, echo: Optional[bool] = False) -> str:
                 raise ValueError
             if not is_valid_email(address):
                 raise InvalidEmailError
+
             if echo:
                 print('\n\033[1;32;40mEmail address has been saved, validation is successful\033[0m\n')
-            return address
-        except (ValueError, AttributeError, InvalidEmailError):
-            print("\n\033[1;31;40mError in email address validation, please try again\033[0m\n")
-            address = input('Please enter your email address: ')
 
-# @email_validator_decorator
-# def validate_email_address(address):
-#     return address
-#
-# Test the decorated function
+            return address
+        except (ValueError, AttributeError, InvalidEmailError) as error:
+            print("\n\033[1;31;40mError in email address validation, please try again\033[0m\n")
+            print("\n\033[1;31;40mError: ", error, "\033[0m\n")
+
+            address = input('Please enter valid email address: ')

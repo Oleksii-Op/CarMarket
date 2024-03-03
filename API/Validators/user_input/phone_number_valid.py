@@ -1,6 +1,5 @@
-import phonenumbers
 from typing import Callable, Optional
-
+import phonenumbers
 
 class InvalidNumberError(Exception):
     """Custom exception raised when a phone number is invalid"""
@@ -63,7 +62,7 @@ def phone_number_validator_func(number: str, echo: Optional[bool] = False) -> st
     Function that validates the phone number.
 
     Args:
-        phone number (str): The phone number to be validated.
+        number (str): The phone number to be validated.
 
         echo (bool, optional): Whether to print the validation result. Defaults to False.
 
@@ -79,9 +78,14 @@ def phone_number_validator_func(number: str, echo: Optional[bool] = False) -> st
                 raise ValueError
             if not is_valid_number(number):
                 raise InvalidNumberError
+
             if echo:
                 print("\n\033[1;32;40mPhone number has been saved, validation is successful\033[0m\n")
+
             return number
-        except (ValueError, AttributeError, InvalidNumberError):
+        except (ValueError, AttributeError, InvalidNumberError) as error:
             print("\n\033[1;31;40mError in phone number validation, please try again\033[0m\n")
+            print("\n\033[1;31;40mError: ", error, "\033[0m\n")
+
+            number = input('Please enter your valid phone number: ')
 

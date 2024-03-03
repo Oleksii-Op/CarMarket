@@ -1,4 +1,5 @@
 from typing import Callable, Optional
+from string import punctuation, digits
 
 
 def name_validator_decorator(func: Callable[[str], str]) -> Callable[[str], str]:
@@ -41,7 +42,7 @@ def name_validator_decorator(func: Callable[[str], str]) -> Callable[[str], str]
     return wrapper
 
 
-def name_validator_func(name: str, echo: Optional[bool] = False) -> str:
+def old_name_validator_func(name: str, echo: Optional[bool] = False) -> str:
     """
     Function that validates the name.
 
@@ -62,24 +63,54 @@ def name_validator_func(name: str, echo: Optional[bool] = False) -> str:
             if not name:
                 raise ValueError("Name cannot be empty")
             if len(name) > 40:
-                raise ValueError("Name must be maximum 40 characters")
+                raise ValueError("Name must be maximum 20 characters")
+            if any(p in name for p in punctuation):
+                raise ValueError("Name must not contain punctuation")
+            if any(p in name for p in digits):
+                raise ValueError("Name must not contain digits")
+
             if echo:
                 print('\n\033[1;32;40mName has been saved, validation is successful\033[0m\n')
+
             return name
         except ValueError as err:
             print(f"\n\033[1;31;40m{err}\033[0m\n")
             name = input('Please enter your name again: ')
 
 
-# Usage example
-# @name_validator_decorator
-# def process_name(name: str) -> str:
-#     """
-#     Example function that requires a validated name.
-#     """
-#     return f"Hello, {name}!"
-#
-#
-# # Test the decorated function
-# processed_name = process_name("John Doe")
-# print(processed_name)
+def name_validator_func(name: str, echo: Optional[bool] = False) -> str:
+    """
+    Function that validates the first name or last name.
+
+    Args:
+        name (str): The first or last name to be validated.
+
+        echo (bool, optional): Whether to print the validation result. Defaults to False.
+
+    Returns:
+        str: The validated name.
+
+    The function continues to prompt the user until a valid name is provided.
+    """
+    while True:
+        try:
+            if not isinstance(name, str):
+                raise ValueError("Name must be a string")
+            if not name:
+                raise ValueError("Name cannot be empty")
+            if len(name) > 20:
+                raise ValueError("Name must be maximum 20 characters")
+            if any(p in name for p in punctuation):
+                raise ValueError("Name must not contain punctuation")
+            if any(p in name for p in digits):
+                raise ValueError("Name must not contain digits")
+
+            if echo:
+                print('\n\033[1;32;40mName has been saved, validation is successful\033[0m\n')
+
+            return name
+        except ValueError as error:
+            print("\n\033[1;31;40mError in first/last name validation, please try again\033[0m\n")
+            print("\n\033[1;31;40mError: ", error, "\033[0m\n")
+
+            name = input('Please enter your name again: ')

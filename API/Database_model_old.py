@@ -60,18 +60,6 @@ class User(Base):
     def validate_name(self, key, name):
         return name_validator_func(name)
 
-    # trucks: Mapped[List["Trucks"]] = relationship(
-    #     back_populates='user', cascade='all, delete-orphan')
-    #
-    # motorcycles: Mapped[List["Motorcycles"]] = relationship(
-    #     back_populates='user', cascade='all, delete-orphan')
-    #
-    # motor_cars: Mapped[List["MotorCars"]] = relationship(
-    #     back_populates='user', cascade='all, delete-orphan')
-    #
-    # electro_cars: Mapped[List["ElectroCars"]] = relationship(
-    #     back_populates='user', cascade='all, delete-orphan')
-
     address: Mapped[List["Address"]] = relationship(
         back_populates='user', cascade='all, delete-orphan')
 
@@ -227,9 +215,6 @@ class Trucks(Vehicle):
         'concrete': True
     }
 
-    # user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
-    # user: Mapped["User"] = relationship(back_populates='trucks')
-
     user_vehicle_id: Mapped[int] = mapped_column(ForeignKey('users_vehicles.vehicle_id'))
     user_vehicle: Mapped["UserVehicle"] = relationship(back_populates='vehicle')
 
@@ -243,9 +228,6 @@ class ElectroCars(Vehicle):
     hybrid: Mapped[bool] = mapped_column(Boolean, nullable=False)
     battery_capacity: Mapped[int] = mapped_column(Integer, nullable=False)
 
-    # user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
-    # user: Mapped["User"] = relationship(back_populates='electro_cars')
-
     user_vehicle_id: Mapped[int] = mapped_column(ForeignKey('users_vehicles.vehicle_id'))
     user_vehicle: Mapped["UserVehicle"] = relationship(back_populates='vehicle')
 
@@ -255,9 +237,6 @@ class Motorcycles(Vehicle):
         'polymorphic_identity': 'motorcycles',
         'concrete': True
     }
-    #
-    # user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
-    # user: Mapped["User"] = relationship(back_populates='motorcycles')
 
     user_vehicle_id: Mapped[int] = mapped_column(ForeignKey('users_vehicles.vehicle_id'))
     user_vehicle: Mapped["UserVehicle"] = relationship(back_populates='vehicle')
@@ -269,14 +248,9 @@ class MotorCars(Vehicle):
         'concrete': True
     }
 
-    # user_id: Mapped[int] = mapped_column(ForeignKey('users.user_id'))
-    # user: Mapped["User"] = relationship(back_populates='motorcars')
-
     user_vehicle_id: Mapped[int] = mapped_column(ForeignKey('users_vehicles.vehicle_id'))
     user_vehicle: Mapped["UserVehicle"] = relationship(back_populates='vehicle')
-    
-def create():
-    engine = create_engine(settings.DATABASE_URL_psycopg, echo=True)
-    Base.metadata.create_all(engine)
 
-create()
+
+
+

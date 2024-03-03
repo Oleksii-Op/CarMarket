@@ -301,7 +301,7 @@
                 "title": "Cabriolet"
             },
             {
-                "title": "CoupÃƒÂ©"
+                "title": "Coupe"
             },
             {
                 "title": "Q3"
@@ -441,7 +441,7 @@
                     "125",
                     "130",
                     "135",
-                    "1er M CoupÃƒÂ©"
+                    "1er M Coupe"
                 ]
             },
             {
@@ -490,16 +490,16 @@
             {
                 "title": "Series 4",
                 "types": [
-                    "418 Gran CoupÃƒÂ©",
+                    "418 Gran Coupe",
                     "420",
-                    "420 Gran CoupÃƒÂ©",
+                    "420 Gran Coupe",
                     "425",
                     "428",
-                    "428 Gran CoupÃƒÂ©",
+                    "428 Gran Coupe",
                     "430",
-                    "430 Gran CoupÃƒÂ©",
+                    "430 Gran Coupe",
                     "435",
-                    "435 Gran CoupÃƒÂ©"
+                    "435 Gran Coupe"
                 ]
             },
             {
@@ -531,10 +531,10 @@
                     "633",
                     "635",
                     "640",
-                    "640 Gran CoupÃƒÂ©",
+                    "640 Gran Coupe",
                     "645",
                     "650",
-                    "650 Gran CoupÃƒÂ©"
+                    "650 Gran Coupe"
                 ]
             },
             {
@@ -935,7 +935,7 @@
         ]
     },
     {
-        "brand": "CitroÃƒÆ’Ã‚Â«n",
+        "brand": "Citroen",
         "models": [
             {
                 "title": "2 CV"

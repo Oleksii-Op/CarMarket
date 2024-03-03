@@ -63,9 +63,12 @@ def address_validator_func(address: str, echo: Optional[bool] = False) -> str:
                 raise ValueError
             if len(address) > 255:
                 raise ValueError
+
             if echo:
-                print("Address has been saved, validation is successful")
+                print("'\n\033[1;32;40mAddress has been saved, validation is successful\033[0m\n'")
+
             return address
-        except (ValueError, AttributeError):
-            print("Error in address validation, please try again")
-            address = input('Please enter your address: ')
+        except (ValueError, AttributeError) as error:
+            print("\n\033[1;31;40mError in address validation, please try again\033[0m\n")
+            print("\n\033[1;31;40mError: ", error, "\033[0m\n")
+            address = input('Please enter valid address: ')

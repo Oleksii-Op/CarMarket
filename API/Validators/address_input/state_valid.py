@@ -59,14 +59,17 @@ def state_validator_func(state: str, echo: Optional[bool] = False) -> str:
     while True:
         try:
             if not isinstance(state, str):
-                raise ValueError
+                raise ValueError("State must be a string")
             if not state:
-                raise ValueError
+                raise ValueError("State cannot be empty")
             if len(state) > 40:
-                raise ValueError
+                raise ValueError("State cannot be longer than 40 characters")
+
             if echo:
-                print("State has been saved, validation is successful")
+                print("\n\033[1;32;40mState has been saved, validation is successful\033[0m\n")
+
             return state
         except ValueError as err:
-            print(err)
+            print('\n\033[1;31;40mError: ', err, '\033[0m\n')
+            print("\n\033[1;31;40mPlease enter your state again\033[0m\n")
             state = input('Please enter your state again: ')

@@ -53,15 +53,19 @@ def zip_code_validator_func(zip_code: str, echo: Optional[bool] = False) -> str:
     The function continues to prompt the user until a valid zip code is provided.
     """
     while True:
-        if not isinstance(zip_code, str):
-            print("Error in zip code validation, please try again")
-            zip_code = input('Please enter your zip code: ')
-            if len(zip_code) == 5 and zip_code.isdigit():
-                break
-        else:
-            break
+        try:
+            if not isinstance(zip_code, str):
+                raise ValueError("Zip code must be a string")
+            if not zip_code:
+                raise ValueError("Zip code cannot be empty")
+            if len(zip_code) != 5 or not zip_code.isdigit():
+                raise ValueError("Zip code must be a 5-digit number")
 
-    if echo:
-        print("Zip code has been saved, validation is successful")
+            if echo:
+                print("\n\033[1;32;40mZip code has been saved, validation is successful\033[0m\n")
 
-    return zip_code
+            return zip_code
+        except ValueError as error:
+            print("\n\033[1;31;40mError in zip code validation, please try again\033[0m\n")
+            print("\n\033[1;31;40mError: ", error, "\033[0m\n")
+            zip_code = input('Please enter valid zip code: ')

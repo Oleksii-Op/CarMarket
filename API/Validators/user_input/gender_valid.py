@@ -66,12 +66,9 @@ def gender_validator_func(gender: str, echo: Optional[bool] = False) -> str:
             if echo:
                 print("\n\033[1;32;40mGender has been saved, validation is successful\033[0m\n")
             return gender
-        except (ValueError, AttributeError):
+        except (ValueError, AttributeError) as error:
             print("\n\033[1;31;40mError in gender validation, please try again\033[0m\n")
+            print("\n\033[1;31;40mError: ", error, "\033[0m\n")
             print("Choose from: male, female, other, unknown")
+
             gender = input('Please enter your gender: ')
-
-
-# @gender_validator_decorator
-# def gender_valid(gender):
-#     return gender
