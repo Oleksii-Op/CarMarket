@@ -1,0 +1,1820 @@
+,vehicle_id,brand,model,category_id
+0,1,Abarth,500,1
+1,2,Abarth,500C,1
+2,3,Abarth,595,1
+3,4,Abarth,595C,1
+4,5,Abarth,695,1
+5,6,Abarth,695C,1
+6,7,Abarth,Grande Punto,1
+7,8,Abarth,Punto Evo,1
+8,9,AC,None,1
+9,10,Acura,MDX,1
+10,11,Acura,NSX,1
+11,12,Acura,RL,1
+12,13,Acura,RSX,1
+13,14,Acura,TL,1
+14,15,Acura,TSX,1
+15,16,Aixam,City,1
+16,17,Aixam,Crossline,1
+17,18,Aixam,Roadline,1
+18,19,Aixam,Scouty R,1
+19,20,Alfa Romeo,4C,1
+20,21,Alfa Romeo,8C,1
+21,22,Alfa Romeo,Alfa 145,1
+22,23,Alfa Romeo,Alfa 146,1
+23,24,Alfa Romeo,Alfa 147,1
+24,25,Alfa Romeo,Alfa 155,1
+25,26,Alfa Romeo,Alfa 156,1
+26,27,Alfa Romeo,Alfa 159,1
+27,28,Alfa Romeo,Alfa 164,1
+28,29,Alfa Romeo,Alfa 166,1
+29,30,Alfa Romeo,Alfa 33,1
+30,31,Alfa Romeo,Alfa 75,1
+31,32,Alfa Romeo,Alfa 90,1
+32,33,Alfa Romeo,Alfasud,1
+33,34,Alfa Romeo,Alfetta,1
+34,35,Alfa Romeo,Brera,1
+35,36,Alfa Romeo,Crosswagon,1
+36,37,Alfa Romeo,Giulia,1
+37,38,Alfa Romeo,Giulietta,1
+38,39,Alfa Romeo,GT,1
+39,40,Alfa Romeo,GTV,1
+40,41,Alfa Romeo,Junior,1
+41,42,Alfa Romeo,MiTo,1
+42,43,Alfa Romeo,Spider,1
+43,44,Alfa Romeo,Sprint,1
+44,45,ALPINA,B10,1
+45,46,ALPINA,B12,1
+46,47,ALPINA,B3,1
+47,48,ALPINA,B4,1
+48,49,ALPINA,B5,1
+49,50,ALPINA,B6,1
+50,51,ALPINA,B7,1
+51,52,ALPINA,B8,1
+52,53,ALPINA,D 10,1
+53,54,ALPINA,D3,1
+54,55,ALPINA,D5,1
+55,56,ALPINA,Roadster S,1
+56,57,ALPINA,XD3,1
+57,58,Artega,GT,1
+58,59,Asia Motors,Rocsta,1
+59,60,Aston Martin,AR1,1
+60,61,Aston Martin,Cygnet,1
+61,62,Aston Martin,DB,1
+62,63,Aston Martin,DB7,1
+63,64,Aston Martin,DB9,1
+64,65,Aston Martin,DBS,1
+65,66,Aston Martin,Lagonda,1
+66,67,Aston Martin,Rapide,1
+67,68,Aston Martin,V12 Vantage,1
+68,69,Aston Martin,V8 Vantage,1
+69,70,Aston Martin,Vanquish,1
+70,71,Aston Martin,Virage,1
+71,72,Audi,100,1
+72,73,Audi,200,1
+73,74,Audi,80,1
+74,75,Audi,90,1
+75,76,Audi,A1,1
+76,77,Audi,A2,1
+77,78,Audi,A3,1
+78,79,Audi,A4,1
+79,80,Audi,A4 Allroad,1
+80,81,Audi,A5,1
+81,82,Audi,A6,1
+82,83,Audi,A6 Allroad,1
+83,84,Audi,A7,1
+84,85,Audi,A8,1
+85,86,Audi,Cabriolet,1
+86,87,Audi,Coupe,1
+87,88,Audi,Q3,1
+88,89,Audi,Q5,1
+89,90,Audi,Q7,1
+90,91,Audi,QUATTRO,1
+91,92,Audi,R8,1
+92,93,Audi,RS2,1
+93,94,Audi,RS3,1
+94,95,Audi,RS4,1
+95,96,Audi,RS5,1
+96,97,Audi,RS6,1
+97,98,Audi,RS7,1
+98,99,Audi,RSQ3,1
+99,100,Audi,S1,1
+100,101,Audi,S2,1
+101,102,Audi,S3,1
+102,103,Audi,S4,1
+103,104,Audi,S5,1
+104,105,Audi,S6,1
+105,106,Audi,S7,1
+106,107,Audi,S8,1
+107,108,Audi,SQ5,1
+108,109,Audi,TT TT,1
+109,110,Audi,TT TT RS,1
+110,111,Audi,TT TTS,1
+111,112,Audi,V8,1
+112,113,Austin,None,1
+113,114,Austin Healey,None,1
+114,115,Bentley,Arnage,1
+115,116,Bentley,Azure,1
+116,117,Bentley,Brooklands,1
+117,118,Bentley,Continental Continental,1
+118,119,Bentley,Continental Continental Flying Spur,1
+119,120,Bentley,Continental Continental GT,1
+120,121,Bentley,Continental Continental GTC,1
+121,122,Bentley,Continental Continental Supersports,1
+122,123,Bentley,Eight,1
+123,124,Bentley,Flying Spur,1
+124,125,Bentley,Mulsanne,1
+125,126,Bentley,Turbo R,1
+126,127,Bentley,Turbo RT,1
+127,128,Bentley,Turbo S,1
+128,129,BMW,Series 1 114,1
+129,130,BMW,Series 1 116,1
+130,131,BMW,Series 1 118,1
+131,132,BMW,Series 1 120,1
+132,133,BMW,Series 1 123,1
+133,134,BMW,Series 1 125,1
+134,135,BMW,Series 1 130,1
+135,136,BMW,Series 1 135,1
+136,137,BMW,Series 1 1er M Coupe,1
+137,138,BMW,2002,1
+138,139,BMW,Series 2 214 Active Tourer,1
+139,140,BMW,Series 2 216,1
+140,141,BMW,Series 2 216 Active Tourer,1
+141,142,BMW,Series 2 216 Gran Tourer,1
+142,143,BMW,Series 2 218,1
+143,144,BMW,Series 2 218 Active Tourer,1
+144,145,BMW,Series 2 218 Gran Tourer,1
+145,146,BMW,Series 2 220,1
+146,147,BMW,Series 2 220 Active Tourer,1
+147,148,BMW,Series 2 220 Gran Tourer,1
+148,149,BMW,Series 2 225,1
+149,150,BMW,Series 2 225 Active Tourer,1
+150,151,BMW,Series 2 228,1
+151,152,BMW,Series 3 315,1
+152,153,BMW,Series 3 316,1
+153,154,BMW,Series 3 318,1
+154,155,BMW,Series 3 318 Gran Turismo,1
+155,156,BMW,Series 3 320,1
+156,157,BMW,Series 3 320 Gran Turismo,1
+157,158,BMW,Series 3 323,1
+158,159,BMW,Series 3 324,1
+159,160,BMW,Series 3 325,1
+160,161,BMW,Series 3 325 Gran Turismo,1
+161,162,BMW,Series 3 328,1
+162,163,BMW,Series 3 328 Gran Turismo,1
+163,164,BMW,Series 3 330,1
+164,165,BMW,Series 3 330 Gran Turismo,1
+165,166,BMW,Series 3 335,1
+166,167,BMW,Series 3 335 Gran Turismo,1
+167,168,BMW,Series 3 ActiveHybrid 3,1
+168,169,BMW,Series 4 418 Gran Coupe,1
+169,170,BMW,Series 4 420,1
+170,171,BMW,Series 4 420 Gran Coupe,1
+171,172,BMW,Series 4 425,1
+172,173,BMW,Series 4 428,1
+173,174,BMW,Series 4 428 Gran Coupe,1
+174,175,BMW,Series 4 430,1
+175,176,BMW,Series 4 430 Gran Coupe,1
+176,177,BMW,Series 4 435,1
+177,178,BMW,Series 4 435 Gran Coupe,1
+178,179,BMW,Series 5 518,1
+179,180,BMW,Series 5 520,1
+180,181,BMW,Series 5 520 Gran Turismo,1
+181,182,BMW,Series 5 523,1
+182,183,BMW,Series 5 524,1
+183,184,BMW,Series 5 525,1
+184,185,BMW,Series 5 528,1
+185,186,BMW,Series 5 530,1
+186,187,BMW,Series 5 530 Gran Turismo,1
+187,188,BMW,Series 5 535,1
+188,189,BMW,Series 5 535 Gran Turismo,1
+189,190,BMW,Series 5 540,1
+190,191,BMW,Series 5 545,1
+191,192,BMW,Series 5 550,1
+192,193,BMW,Series 5 550 Gran Turismo,1
+193,194,BMW,Series 5 ActiveHybrid 5,1
+194,195,BMW,Series 6 628,1
+195,196,BMW,Series 6 630,1
+196,197,BMW,Series 6 633,1
+197,198,BMW,Series 6 635,1
+198,199,BMW,Series 6 640,1
+199,200,BMW,Series 6 640 Gran Coupe,1
+200,201,BMW,Series 6 645,1
+201,202,BMW,Series 6 650,1
+202,203,BMW,Series 6 650 Gran Coupe,1
+203,204,BMW,Series 7 725,1
+204,205,BMW,Series 7 728,1
+205,206,BMW,Series 7 730,1
+206,207,BMW,Series 7 732,1
+207,208,BMW,Series 7 735,1
+208,209,BMW,Series 7 740,1
+209,210,BMW,Series 7 745,1
+210,211,BMW,Series 7 750,1
+211,212,BMW,Series 7 760,1
+212,213,BMW,Series 7 ActiveHybrid 7,1
+213,214,BMW,840,1
+214,215,BMW,850,1
+215,216,BMW,i3,1
+216,217,BMW,i8,1
+217,218,BMW,M Models M135,1
+218,219,BMW,M Models M235,1
+219,220,BMW,M Models M3,1
+220,221,BMW,M Models M4,1
+221,222,BMW,M Models M5,1
+222,223,BMW,M Models M550,1
+223,224,BMW,M Models M6,1
+224,225,BMW,Series X ActiveHybrid X6,1
+225,226,BMW,Series X X1,1
+226,227,BMW,Series X X3,1
+227,228,BMW,Series X X4,1
+228,229,BMW,Series X X5,1
+229,230,BMW,Series X X5 M,1
+230,231,BMW,Series X X5 M50,1
+231,232,BMW,Series X X6,1
+232,233,BMW,Series X X6 M,1
+233,234,BMW,Series X X6 M50,1
+234,235,BMW,Series Z Z1,1
+235,236,BMW,Series Z Z3,1
+236,237,BMW,Series Z Z3 M,1
+237,238,BMW,Series Z Z4,1
+238,239,BMW,Series Z Z4 M,1
+239,240,BMW,Series Z Z8,1
+240,241,Borgward,None,1
+241,242,Brilliance,BC3,1
+242,243,Brilliance,BS2,1
+243,244,Brilliance,BS4,1
+244,245,Brilliance,BS6,1
+245,246,Bugatti,EB 110,1
+246,247,Bugatti,Veyron,1
+247,248,Buick,Century,1
+248,249,Buick,Electra,1
+249,250,Buick,Enclave,1
+250,251,Buick,La Crosse,1
+251,252,Buick,Le Sabre,1
+252,253,Buick,Park Avenue,1
+253,254,Buick,Regal,1
+254,255,Buick,Riviera,1
+255,256,Buick,Roadmaster,1
+256,257,Buick,Skylark,1
+257,258,Cadillac,Allante,1
+258,259,Cadillac,ATS,1
+259,260,Cadillac,BLS,1
+260,261,Cadillac,CTS,1
+261,262,Cadillac,Deville,1
+262,263,Cadillac,Eldorado,1
+263,264,Cadillac,Escalade,1
+264,265,Cadillac,Fleetwood,1
+265,266,Cadillac,Seville,1
+266,267,Cadillac,SRX,1
+267,268,Cadillac,STS,1
+268,269,Cadillac,XLR,1
+269,270,Casalini,None,1
+270,271,Caterham,None,1
+271,272,Chatenet,None,1
+272,273,Chevrolet,2500,1
+273,274,Chevrolet,Alero,1
+274,275,Chevrolet,Astro,1
+275,276,Chevrolet,Avalanche,1
+276,277,Chevrolet,Aveo,1
+277,278,Chevrolet,Beretta,1
+278,279,Chevrolet,Blazer,1
+279,280,Chevrolet,C1500,1
+280,281,Chevrolet,Camaro,1
+281,282,Chevrolet,Caprice,1
+282,283,Chevrolet,Captiva,1
+283,284,Chevrolet,Cavalier,1
+284,285,Chevrolet,Chevelle,1
+285,286,Chevrolet,Chevy Van,1
+286,287,Chevrolet,Citation,1
+287,288,Chevrolet,Colorado,1
+288,289,Chevrolet,Corsica,1
+289,290,Chevrolet,Cruze,1
+290,291,Chevrolet,El Camino,1
+291,292,Chevrolet,Epica,1
+292,293,Chevrolet,Evanda,1
+293,294,Chevrolet,Express,1
+294,295,Chevrolet,G,1
+295,296,Chevrolet,HHR,1
+296,297,Chevrolet,Impala,1
+297,298,Chevrolet,K1500,1
+298,299,Chevrolet,K30,1
+299,300,Chevrolet,Kalos,1
+300,301,Chevrolet,Lacetti,1
+301,302,Chevrolet,Lumina,1
+302,303,Chevrolet,Malibu,1
+303,304,Chevrolet,Matiz,1
+304,305,Chevrolet,Nubira,1
+305,306,Chevrolet,Orlando,1
+306,307,Chevrolet,Rezzo,1
+307,308,Chevrolet,S-10,1
+308,309,Chevrolet,Silverado,1
+309,310,Chevrolet,Spark,1
+310,311,Chevrolet,SSR,1
+311,312,Chevrolet,Suburban,1
+312,313,Chevrolet,Tahoe,1
+313,314,Chevrolet,Trailblazer,1
+314,315,Chevrolet,Trans Sport,1
+315,316,Chevrolet,Trax,1
+316,317,Chevrolet,Venture,1
+317,318,Chevrolet,Volt,1
+318,319,Chrysler,300 M,1
+319,320,Chrysler,300C,1
+320,321,Chrysler,Aspen,1
+321,322,Chrysler,Crossfire,1
+322,323,Chrysler,Daytona,1
+323,324,Chrysler,ES,1
+324,325,Chrysler,Grand Voyager,1
+325,326,Chrysler,GS,1
+326,327,Chrysler,GTS,1
+327,328,Chrysler,Imperial,1
+328,329,Chrysler,Le Baron,1
+329,330,Chrysler,Neon,1
+330,331,Chrysler,New Yorker,1
+331,332,Chrysler,Pacifica,1
+332,333,Chrysler,PT Cruiser,1
+333,334,Chrysler,Saratoga,1
+334,335,Chrysler,Sebring,1
+335,336,Chrysler,Stratus,1
+336,337,Chrysler,Valiant,1
+337,338,Chrysler,Viper,1
+338,339,Chrysler,Vision,1
+339,340,Chrysler,Voyager,1
+340,341,Citroen,2 CV,1
+341,342,Citroen,AX,1
+342,343,Citroen,Berlingo,1
+343,344,Citroen,BX,1
+344,345,Citroen,C-Crosser,1
+345,346,Citroen,C-ElysГѓЖ’Г‚В©e,1
+346,347,Citroen,C-Zero,1
+347,348,Citroen,C1,1
+348,349,Citroen,C2,1
+349,350,Citroen,C3,1
+350,351,Citroen,C3 Picasso,1
+351,352,Citroen,C4,1
+352,353,Citroen,C4 Aircross,1
+353,354,Citroen,C4 Cactus,1
+354,355,Citroen,C4 Picasso,1
+355,356,Citroen,C5,1
+356,357,Citroen,C6,1
+357,358,Citroen,C8,1
+358,359,Citroen,CX,1
+359,360,Citroen,DS,1
+360,361,Citroen,DS3,1
+361,362,Citroen,DS4,1
+362,363,Citroen,DS5,1
+363,364,Citroen,Evasion,1
+364,365,Citroen,Grand C4 Picasso,1
+365,366,Citroen,GSA,1
+366,367,Citroen,Jumper,1
+367,368,Citroen,Jumpy,1
+368,369,Citroen,Nemo,1
+369,370,Citroen,SAXO,1
+370,371,Citroen,SM,1
+371,372,Citroen,Visa,1
+372,373,Citroen,Xantia,1
+373,374,Citroen,XM,1
+374,375,Citroen,Xsara,1
+375,376,Citroen,Xsara Picasso,1
+376,377,Citroen,ZX,1
+377,378,Cobra,None,1
+378,379,Corvette,C1,1
+379,380,Corvette,C2,1
+380,381,Corvette,C3,1
+381,382,Corvette,C4,1
+382,383,Corvette,C5,1
+383,384,Corvette,C6,1
+384,385,Corvette,C7,1
+385,386,Corvette,Z06,1
+386,387,Corvette,ZR 1,1
+387,388,Dacia,Dokker,1
+388,389,Dacia,Duster,1
+389,390,Dacia,Lodgy,1
+390,391,Dacia,Logan,1
+391,392,Dacia,Logan Pick-Up,1
+392,393,Dacia,Pick Up,1
+393,394,Dacia,Sandero,1
+394,395,Daewoo,Espero,1
+395,396,Daewoo,Evanda,1
+396,397,Daewoo,Kalos,1
+397,398,Daewoo,Korando,1
+398,399,Daewoo,Lacetti,1
+399,400,Daewoo,Lanos,1
+400,401,Daewoo,Leganza,1
+401,402,Daewoo,Matiz,1
+402,403,Daewoo,Musso,1
+403,404,Daewoo,Nexia,1
+404,405,Daewoo,Nubira,1
+405,406,Daewoo,Rezzo,1
+406,407,Daewoo,Tacuma,1
+407,408,Daihatsu,Applause,1
+408,409,Daihatsu,Charade,1
+409,410,Daihatsu,Charmant,1
+410,411,Daihatsu,Copen,1
+411,412,Daihatsu,Cuore,1
+412,413,Daihatsu,Feroza/Sportrak,1
+413,414,Daihatsu,Freeclimber,1
+414,415,Daihatsu,Gran Move,1
+415,416,Daihatsu,Hijet,1
+416,417,Daihatsu,MATERIA,1
+417,418,Daihatsu,Move,1
+418,419,Daihatsu,Rocky/Fourtrak,1
+419,420,Daihatsu,Sirion,1
+420,421,Daihatsu,Terios,1
+421,422,Daihatsu,TREVIS,1
+422,423,Daihatsu,YRV,1
+423,424,DeTomaso,GuarГѓЖ’ ,1
+424,425,DeTomaso,Pantera,1
+425,426,Dodge,Avenger,1
+426,427,Dodge,Caliber,1
+427,428,Dodge,Challenger,1
+428,429,Dodge,Charger,1
+429,430,Dodge,Dakota,1
+430,431,Dodge,Demon,1
+431,432,Dodge,Durango,1
+432,433,Dodge,Grand Caravan,1
+433,434,Dodge,Hornet,1
+434,435,Dodge,Journey,1
+435,436,Dodge,Magnum,1
+436,437,Dodge,Neon,1
+437,438,Dodge,Nitro,1
+438,439,Dodge,RAM,1
+439,440,Dodge,Stealth,1
+440,441,Dodge,Viper,1
+441,442,Ferrari,208,1
+442,443,Ferrari,246,1
+443,444,Ferrari,250,1
+444,445,Ferrari,275,1
+445,446,Ferrari,288,1
+446,447,Ferrari,308,1
+447,448,Ferrari,328,1
+448,449,Ferrari,330,1
+449,450,Ferrari,348,1
+450,451,Ferrari,360,1
+451,452,Ferrari,365,1
+452,453,Ferrari,400,1
+453,454,Ferrari,412,1
+454,455,Ferrari,456,1
+455,456,Ferrari,458,1
+456,457,Ferrari,512,1
+457,458,Ferrari,550,1
+458,459,Ferrari,575,1
+459,460,Ferrari,599 GTB,1
+460,461,Ferrari,612,1
+461,462,Ferrari,750,1
+462,463,Ferrari,California,1
+463,464,Ferrari,Daytona,1
+464,465,Ferrari,Dino GT4,1
+465,466,Ferrari,Enzo Ferrari,1
+466,467,Ferrari,F12,1
+467,468,Ferrari,F355,1
+468,469,Ferrari,F40,1
+469,470,Ferrari,F430,1
+470,471,Ferrari,F50,1
+471,472,Ferrari,FF,1
+472,473,Ferrari,LaFerrari,1
+473,474,Ferrari,Mondial,1
+474,475,Ferrari,Superamerica,1
+475,476,Ferrari,Testarossa,1
+476,477,Fiat,124,1
+477,478,Fiat,126,1
+478,479,Fiat,127,1
+479,480,Fiat,130,1
+480,481,Fiat,131,1
+481,482,Fiat,500,1
+482,483,Fiat,500C,1
+483,484,Fiat,500L,1
+484,485,Fiat,500L Living,1
+485,486,Fiat,500L Trekking,1
+486,487,Fiat,500X,1
+487,488,Fiat,Barchetta,1
+488,489,Fiat,Brava,1
+489,490,Fiat,Bravo,1
+490,491,Fiat,Cinquecento,1
+491,492,Fiat,Coupe,1
+492,493,Fiat,Croma,1
+493,494,Fiat,Dino,1
+494,495,Fiat,Doblo,1
+495,496,Fiat,Ducato,1
+496,497,Fiat,Fiorino,1
+497,498,Fiat,Freemont,1
+498,499,Fiat,Grande Punto,1
+499,500,Fiat,Idea,1
+500,501,Fiat,Linea,1
+501,502,Fiat,Marea,1
+502,503,Fiat,Marengo,1
+503,504,Fiat,Multipla,1
+504,505,Fiat,New Panda,1
+505,506,Fiat,Palio,1
+506,507,Fiat,Panda,1
+507,508,Fiat,Punto,1
+508,509,Fiat,Punto Evo,1
+509,510,Fiat,Qubo,1
+510,511,Fiat,Regata,1
+511,512,Fiat,Ritmo,1
+512,513,Fiat,Scudo,1
+513,514,Fiat,Sedici,1
+514,515,Fiat,Seicento,1
+515,516,Fiat,Spider Europa,1
+516,517,Fiat,Stilo,1
+517,518,Fiat,Strada,1
+518,519,Fiat,Tempra,1
+519,520,Fiat,Tipo,1
+520,521,Fiat,Ulysse,1
+521,522,Fiat,Uno,1
+522,523,Fiat,X 1/9,1
+523,524,Fisker,Karma,1
+524,525,Ford,Aerostar,1
+525,526,Ford,B-Max,1
+526,527,Ford,Bronco,1
+527,528,Ford,C-Max,1
+528,529,Ford,Capri,1
+529,530,Ford,Cougar,1
+530,531,Ford,Courier,1
+531,532,Ford,Crown,1
+532,533,Ford,Econoline,1
+533,534,Ford,Econovan,1
+534,535,Ford,EcoSport,1
+535,536,Ford,Edge,1
+536,537,Ford,Escape,1
+537,538,Ford,Escort,1
+538,539,Ford,Excursion,1
+539,540,Ford,Expedition,1
+540,541,Ford,Explorer,1
+541,542,Ford,Express,1
+542,543,Ford,F 150,1
+543,544,Ford,F 250,1
+544,545,Ford,F 350,1
+545,546,Ford,Fairlane,1
+546,547,Ford,Falcon,1
+547,548,Ford,Fiesta,1
+548,549,Ford,Flex,1
+549,550,Ford,Focus,1
+550,551,Ford,Fusion,1
+551,552,Ford,Galaxy,1
+552,553,Ford,Granada,1
+553,554,Ford,Grand C-Max,1
+554,555,Ford,Grand Tourneo,1
+555,556,Ford,GT,1
+556,557,Ford,Ka,1
+557,558,Ford,Kuga,1
+558,559,Ford,Maverick,1
+559,560,Ford,Mercury,1
+560,561,Ford,Mondeo,1
+561,562,Ford,Mustang,1
+562,563,Ford,Orion,1
+563,564,Ford,Probe,1
+564,565,Ford,Puma,1
+565,566,Ford,Ranger,1
+566,567,Ford,Raptor,1
+567,568,Ford,S-Max,1
+568,569,Ford,Scorpio,1
+569,570,Ford,Sierra,1
+570,571,Ford,Sportka,1
+571,572,Ford,Streetka,1
+572,573,Ford,Taunus,1
+573,574,Ford,Taurus,1
+574,575,Ford,Thunderbird,1
+575,576,Ford,Tourneo,1
+576,577,Ford,Transit Transit,1
+577,578,Ford,Transit Transit Connect,1
+578,579,Ford,Transit Transit Courier,1
+579,580,Ford,Transit Transit Custom,1
+580,581,Ford,Windstar,1
+581,582,GAC Gonow,None,1
+582,583,Gemballa,None,1
+583,584,GMC,Acadia,1
+584,585,GMC,Envoy,1
+585,586,GMC,Safari,1
+586,587,GMC,Savana,1
+587,588,GMC,Sierra,1
+588,589,GMC,Sonoma,1
+589,590,GMC,Syclone,1
+590,591,GMC,Typhoon,1
+591,592,GMC,Vandura,1
+592,593,GMC,Yukon,1
+593,594,Grecav,Sonique,1
+594,595,Hamann,None,1
+595,596,Holden,None,1
+596,597,Honda,Accord,1
+597,598,Honda,Aerodeck,1
+598,599,Honda,Civic,1
+599,600,Honda,Concerto,1
+600,601,Honda,CR-V,1
+601,602,Honda,CR-Z,1
+602,603,Honda,CRX,1
+603,604,Honda,Element,1
+604,605,Honda,FR-V,1
+605,606,Honda,HR-V,1
+606,607,Honda,Insight,1
+607,608,Honda,Integra,1
+608,609,Honda,Jazz,1
+609,610,Honda,Legend,1
+610,611,Honda,Logo,1
+611,612,Honda,NSX,1
+612,613,Honda,Odyssey,1
+613,614,Honda,Prelude,1
+614,615,Honda,S2000,1
+615,616,Honda,Shuttle,1
+616,617,Honda,Stream,1
+617,618,Hummer,H1,1
+618,619,Hummer,H2,1
+619,620,Hummer,H3,1
+620,621,Hyundai,Accent,1
+621,622,Hyundai,Atos,1
+622,623,Hyundai,Azera,1
+623,624,Hyundai,Coupe,1
+624,625,Hyundai,Elantra,1
+625,626,Hyundai,Excel,1
+626,627,Hyundai,Galloper,1
+627,628,Hyundai,Genesis,1
+628,629,Hyundai,Getz,1
+629,630,Hyundai,Grand Santa Fe,1
+630,631,Hyundai,Grandeur,1
+631,632,Hyundai,H 100,1
+632,633,Hyundai,H 200,1
+633,634,Hyundai,H-1,1
+634,635,Hyundai,H-1 Starex,1
+635,636,Hyundai,i10,1
+636,637,Hyundai,i20,1
+637,638,Hyundai,i30,1
+638,639,Hyundai,i40,1
+639,640,Hyundai,i50,1
+640,641,Hyundai,ix20,1
+641,642,Hyundai,ix35,1
+642,643,Hyundai,ix55,1
+643,644,Hyundai,Lantra,1
+644,645,Hyundai,Matrix,1
+645,646,Hyundai,Pony,1
+646,647,Hyundai,S-Coupe,1
+647,648,Hyundai,Santa Fe,1
+648,649,Hyundai,Santamo,1
+649,650,Hyundai,Sonata,1
+650,651,Hyundai,Terracan,1
+651,652,Hyundai,Trajet,1
+652,653,Hyundai,Tucson,1
+653,654,Hyundai,Veloster,1
+654,655,Hyundai,Veracruz,1
+655,656,Hyundai,XG 30,1
+656,657,Hyundai,XG 350,1
+657,658,Infiniti,EX30,1
+658,659,Infiniti,EX35,1
+659,660,Infiniti,EX37,1
+660,661,Infiniti,FX,1
+661,662,Infiniti,G35,1
+662,663,Infiniti,G37,1
+663,664,Infiniti,M30,1
+664,665,Infiniti,M35,1
+665,666,Infiniti,M37,1
+666,667,Infiniti,Q45,1
+667,668,Infiniti,Q50,1
+668,669,Infiniti,Q60,1
+669,670,Infiniti,Q70,1
+670,671,Infiniti,QX50,1
+671,672,Infiniti,QX56,1
+672,673,Infiniti,QX70,1
+673,674,Isuzu,Campo,1
+674,675,Isuzu,D-Max,1
+675,676,Isuzu,Gemini,1
+676,677,Isuzu,Midi,1
+677,678,Isuzu,PICK UP,1
+678,679,Isuzu,Trooper,1
+679,680,Iveco,Massif,1
+680,681,Jaguar,Daimler,1
+681,682,Jaguar,E-Type,1
+682,683,Jaguar,F-Type,1
+683,684,Jaguar,MK II,1
+684,685,Jaguar,S-Type,1
+685,686,Jaguar,X-Type,1
+686,687,Jaguar,XE,1
+687,688,Jaguar,XF,1
+688,689,Jaguar,XJ,1
+689,690,Jaguar,XJ12,1
+690,691,Jaguar,XJ40,1
+691,692,Jaguar,XJ6,1
+692,693,Jaguar,XJ8,1
+693,694,Jaguar,XJR,1
+694,695,Jaguar,XJS,1
+695,696,Jaguar,XJSC,1
+696,697,Jaguar,XK,1
+697,698,Jaguar,XKR,1
+698,699,Jeep,Cherokee,1
+699,700,Jeep,CJ,1
+700,701,Jeep,Comanche,1
+701,702,Jeep,Commander,1
+702,703,Jeep,Compass,1
+703,704,Jeep,Grand Cherokee,1
+704,705,Jeep,Patriot,1
+705,706,Jeep,Renegade,1
+706,707,Jeep,Wagoneer,1
+707,708,Jeep,Willys,1
+708,709,Jeep,Wrangler,1
+709,710,Kia,Besta,1
+710,711,Kia,Borrego,1
+711,712,Kia,Carens,1
+712,713,Kia,Carnival,1
+713,714,Kia,cee'd,1
+714,715,Kia,cee'd Sportswagon,1
+715,716,Kia,Cerato,1
+716,717,Kia,Clarus,1
+717,718,Kia,Elan,1
+718,719,Kia,Joice,1
+719,720,Kia,K2500,1
+720,721,Kia,K2700,1
+721,722,Kia,Leo,1
+722,723,Kia,Magentis,1
+723,724,Kia,Mentor,1
+724,725,Kia,Mini,1
+725,726,Kia,Opirus,1
+726,727,Kia,Optima,1
+727,728,Kia,Picanto,1
+728,729,Kia,Pregio,1
+729,730,Kia,Pride,1
+730,731,Kia,pro_cee'd,1
+731,732,Kia,Retona,1
+732,733,Kia,Rio,1
+733,734,Kia,Roadster,1
+734,735,Kia,Rocsta,1
+735,736,Kia,Sephia,1
+736,737,Kia,Shuma,1
+737,738,Kia,Sorento,1
+738,739,Kia,Soul,1
+739,740,Kia,Sportage,1
+740,741,Kia,Venga,1
+741,742,KГѓЖ’Г†вЂ™ГѓвЂљГ‚В¶nigsegg,CCR,1
+742,743,KTM,X-BOW,1
+743,744,Lada,110,1
+744,745,Lada,111,1
+745,746,Lada,112,1
+746,747,Lada,1200,1
+747,748,Lada,2107,1
+748,749,Lada,2110,1
+749,750,Lada,2111,1
+750,751,Lada,2112,1
+751,752,Lada,Aleko,1
+752,753,Lada,Forma,1
+753,754,Lada,Granta,1
+754,755,Lada,Kalina,1
+755,756,Lada,Niva,1
+756,757,Lada,Nova,1
+757,758,Lada,Priora,1
+758,759,Lada,Samara,1
+759,760,Lamborghini,Aventador,1
+760,761,Lamborghini,Countach,1
+761,762,Lamborghini,Diablo,1
+762,763,Lamborghini,Espada,1
+763,764,Lamborghini,Gallardo,1
+764,765,Lamborghini,HuracГѓЖ’Г‚ВЎn,1
+765,766,Lamborghini,Jalpa,1
+766,767,Lamborghini,LM,1
+767,768,Lamborghini,Miura,1
+768,769,Lamborghini,MurciГѓЖ’Г‚В©lago,1
+769,770,Lamborghini,Urraco,1
+770,771,Lancia,Beta,1
+771,772,Lancia,Dedra,1
+772,773,Lancia,Delta,1
+773,774,Lancia,Flaminia,1
+774,775,Lancia,Flavia,1
+775,776,Lancia,Fulvia,1
+776,777,Lancia,Gamma,1
+777,778,Lancia,Kappa,1
+778,779,Lancia,Lybra,1
+779,780,Lancia,MUSA,1
+780,781,Lancia,Phedra,1
+781,782,Lancia,Prisma,1
+782,783,Lancia,Stratos,1
+783,784,Lancia,Thema,1
+784,785,Lancia,Thesis,1
+785,786,Lancia,Voyager,1
+786,787,Lancia,Ypsilon,1
+787,788,Lancia,Zeta,1
+788,789,Land Rover,Defender,1
+789,790,Land Rover,Discovery,1
+790,791,Land Rover,Discovery Sport,1
+791,792,Land Rover,Freelander,1
+792,793,Land Rover,Range Rover,1
+793,794,Land Rover,Range Rover Evoque,1
+794,795,Land Rover,Range Rover Sport,1
+795,796,Land Rover,Serie I,1
+796,797,Land Rover,Serie II,1
+797,798,Land Rover,Serie III,1
+798,799,Landwind,CV-9,1
+799,800,Landwind,S,1
+800,801,Landwind,SC2,1
+801,802,Landwind,SC4,1
+802,803,Lexus,CT 200h,1
+803,804,Lexus,ES Series ES 300,1
+804,805,Lexus,ES Series ES 330,1
+805,806,Lexus,ES Series ES 350,1
+806,807,Lexus,GS Series GS 250,1
+807,808,Lexus,GS Series GS 300,1
+808,809,Lexus,GS Series GS 350,1
+809,810,Lexus,GS Series GS 430,1
+810,811,Lexus,GS Series GS 450,1
+811,812,Lexus,GS Series GS 460,1
+812,813,Lexus,GX 470,1
+813,814,Lexus,IS Series IS 200,1
+814,815,Lexus,IS Series IS 220,1
+815,816,Lexus,IS Series IS 250,1
+816,817,Lexus,IS Series IS 300,1
+817,818,Lexus,IS Series IS 350,1
+818,819,Lexus,IS Series IS-F,1
+819,820,Lexus,LS Series LS 400,1
+820,821,Lexus,LS Series LS 430,1
+821,822,Lexus,LS Series LS 460,1
+822,823,Lexus,LS Series LS 600,1
+823,824,Lexus,LX Series LX 470,1
+824,825,Lexus,LX Series LX 570,1
+825,826,Lexus,NX Series NX 200,1
+826,827,Lexus,NX Series NX 300,1
+827,828,Lexus,RC F,1
+828,829,Lexus,RX Series RX 300,1
+829,830,Lexus,RX Series RX 330,1
+830,831,Lexus,RX Series RX 350,1
+831,832,Lexus,RX Series RX 400,1
+832,833,Lexus,RX Series RX 450,1
+833,834,Lexus,SC 400,1
+834,835,Lexus,SC 430,1
+835,836,Ligier,Ambra,1
+836,837,Ligier,Be Sun,1
+837,838,Ligier,JS 50,1
+838,839,Ligier,JS 50 L,1
+839,840,Ligier,JS RC,1
+840,841,Ligier,Nova,1
+841,842,Ligier,Optima,1
+842,843,Ligier,X - Too,1
+843,844,Lincoln,Aviator,1
+844,845,Lincoln,Continental,1
+845,846,Lincoln,LS,1
+846,847,Lincoln,Mark,1
+847,848,Lincoln,Navigator,1
+848,849,Lincoln,Town Car,1
+849,850,Lotus,340 R,1
+850,851,Lotus,Cortina,1
+851,852,Lotus,Elan,1
+852,853,Lotus,Elise,1
+853,854,Lotus,Elite,1
+854,855,Lotus,Esprit,1
+855,856,Lotus,Europa,1
+856,857,Lotus,Evora,1
+857,858,Lotus,Excel,1
+858,859,Lotus,Exige,1
+859,860,Lotus,Super Seven,1
+860,861,Mahindra,None,1
+861,862,Maserati,222,1
+862,863,Maserati,224,1
+863,864,Maserati,228,1
+864,865,Maserati,3200,1
+865,866,Maserati,418,1
+866,867,Maserati,420,1
+867,868,Maserati,4200,1
+868,869,Maserati,422,1
+869,870,Maserati,424,1
+870,871,Maserati,430,1
+871,872,Maserati,Biturbo,1
+872,873,Maserati,Ghibli,1
+873,874,Maserati,GranCabrio,1
+874,875,Maserati,Gransport,1
+875,876,Maserati,Granturismo,1
+876,877,Maserati,Indy,1
+877,878,Maserati,Karif,1
+878,879,Maserati,MC12,1
+879,880,Maserati,Merak,1
+880,881,Maserati,Quattroporte,1
+881,882,Maserati,Shamal,1
+882,883,Maserati,Spyder,1
+883,884,Maybach,57,1
+884,885,Maybach,62,1
+885,886,Mazda,121,1
+886,887,Mazda,2,1
+887,888,Mazda,3,1
+888,889,Mazda,323,1
+889,890,Mazda,5,1
+890,891,Mazda,6,1
+891,892,Mazda,626,1
+892,893,Mazda,929,1
+893,894,Mazda,B series,1
+894,895,Mazda,Bongo,1
+895,896,Mazda,BT-50,1
+896,897,Mazda,CX-3,1
+897,898,Mazda,CX-5,1
+898,899,Mazda,CX-7,1
+899,900,Mazda,CX-9,1
+900,901,Mazda,Demio,1
+901,902,Mazda,E series,1
+902,903,Mazda,Millenia,1
+903,904,Mazda,MPV,1
+904,905,Mazda,MX-3,1
+905,906,Mazda,MX-5,1
+906,907,Mazda,MX-6,1
+907,908,Mazda,Premacy,1
+908,909,Mazda,Protege,1
+909,910,Mazda,RX-6,1
+910,911,Mazda,RX-7,1
+911,912,Mazda,RX-8,1
+912,913,Mazda,Tribute,1
+913,914,Mazda,Xedos,1
+914,915,McLaren,650S CoupГѓЖ’Г‚В©,1
+915,916,McLaren,650S Spider,1
+916,917,McLaren,MP4-12C,1
+917,918,Mercedes-Benz,190,1
+918,919,Mercedes-Benz,200,1
+919,920,Mercedes-Benz,220,1
+920,921,Mercedes-Benz,230,1
+921,922,Mercedes-Benz,240,1
+922,923,Mercedes-Benz,250,1
+923,924,Mercedes-Benz,260,1
+924,925,Mercedes-Benz,270,1
+925,926,Mercedes-Benz,280,1
+926,927,Mercedes-Benz,290,1
+927,928,Mercedes-Benz,300,1
+928,929,Mercedes-Benz,320,1
+929,930,Mercedes-Benz,350,1
+930,931,Mercedes-Benz,380,1
+931,932,Mercedes-Benz,400,1
+932,933,Mercedes-Benz,416,1
+933,934,Mercedes-Benz,420,1
+934,935,Mercedes-Benz,450,1
+935,936,Mercedes-Benz,500,1
+936,937,Mercedes-Benz,560,1
+937,938,Mercedes-Benz,600,1
+938,939,Mercedes-Benz,A-Klasse A 140,1
+939,940,Mercedes-Benz,A-Klasse A 150,1
+940,941,Mercedes-Benz,A-Klasse A 160,1
+941,942,Mercedes-Benz,A-Klasse A 170,1
+942,943,Mercedes-Benz,A-Klasse A 180,1
+943,944,Mercedes-Benz,A-Klasse A 190,1
+944,945,Mercedes-Benz,A-Klasse A 200,1
+945,946,Mercedes-Benz,A-Klasse A 210,1
+946,947,Mercedes-Benz,A-Klasse A 220,1
+947,948,Mercedes-Benz,A-Klasse A 250,1
+948,949,Mercedes-Benz,A-Klasse A 45 AMG,1
+949,950,Mercedes-Benz,AMG GT,1
+950,951,Mercedes-Benz,AMG GT S,1
+951,952,Mercedes-Benz,B-Klasse B 150,1
+952,953,Mercedes-Benz,B-Klasse B 160,1
+953,954,Mercedes-Benz,B-Klasse B 170,1
+954,955,Mercedes-Benz,B-Klasse B 180,1
+955,956,Mercedes-Benz,B-Klasse B 200,1
+956,957,Mercedes-Benz,B-Klasse B 220,1
+957,958,Mercedes-Benz,B-Klasse B 250,1
+958,959,Mercedes-Benz,B-Klasse B Electric Drive,1
+959,960,Mercedes-Benz,C-Klasse C 160,1
+960,961,Mercedes-Benz,C-Klasse C 180,1
+961,962,Mercedes-Benz,C-Klasse C 200,1
+962,963,Mercedes-Benz,C-Klasse C 220,1
+963,964,Mercedes-Benz,C-Klasse C 230,1
+964,965,Mercedes-Benz,C-Klasse C 240,1
+965,966,Mercedes-Benz,C-Klasse C 250,1
+966,967,Mercedes-Benz,C-Klasse C 270,1
+967,968,Mercedes-Benz,C-Klasse C 280,1
+968,969,Mercedes-Benz,C-Klasse C 30 AMG,1
+969,970,Mercedes-Benz,C-Klasse C 300,1
+970,971,Mercedes-Benz,C-Klasse C 32 AMG,1
+971,972,Mercedes-Benz,C-Klasse C 320,1
+972,973,Mercedes-Benz,C-Klasse C 350,1
+973,974,Mercedes-Benz,C-Klasse C 36 AMG,1
+974,975,Mercedes-Benz,C-Klasse C 400,1
+975,976,Mercedes-Benz,C-Klasse C 43 AMG,1
+976,977,Mercedes-Benz,C-Klasse C 450 AMG,1
+977,978,Mercedes-Benz,C-Klasse C 55 AMG,1
+978,979,Mercedes-Benz,C-Klasse C 63 AMG,1
+979,980,Mercedes-Benz,CE-Klasse CE 200,1
+980,981,Mercedes-Benz,CE-Klasse CE 220,1
+981,982,Mercedes-Benz,CE-Klasse CE 230,1
+982,983,Mercedes-Benz,CE-Klasse CE 280,1
+983,984,Mercedes-Benz,CE-Klasse CE 300,1
+984,985,Mercedes-Benz,CE-Klasse CE 320,1
+985,986,Mercedes-Benz,Citan,1
+986,987,Mercedes-Benz,CL-Klasse CL 160,1
+987,988,Mercedes-Benz,CL-Klasse CL 180,1
+988,989,Mercedes-Benz,CL-Klasse CL 200,1
+989,990,Mercedes-Benz,CL-Klasse CL 220,1
+990,991,Mercedes-Benz,CL-Klasse CL 230,1
+991,992,Mercedes-Benz,CL-Klasse CL 320,1
+992,993,Mercedes-Benz,CL-Klasse CL 420,1
+993,994,Mercedes-Benz,CL-Klasse CL 500,1
+994,995,Mercedes-Benz,CL-Klasse CL 55 AMG,1
+995,996,Mercedes-Benz,CL-Klasse CL 600,1
+996,997,Mercedes-Benz,CL-Klasse CL 63 AMG,1
+997,998,Mercedes-Benz,CL-Klasse CL 65 AMG,1
+998,999,Mercedes-Benz,CLA-Klasse CLA 180,1
+999,1000,Mercedes-Benz,CLA-Klasse CLA 200,1
+1000,1001,Mercedes-Benz,CLA-Klasse CLA 220,1
+1001,1002,Mercedes-Benz,CLA-Klasse CLA 250,1
+1002,1003,Mercedes-Benz,CLA-Klasse CLA 45 AMG,1
+1003,1004,Mercedes-Benz,CLA-Klasse CLA Shooting Brake,1
+1004,1005,Mercedes-Benz,CLC-Klasse CLC 160,1
+1005,1006,Mercedes-Benz,CLC-Klasse CLC 180,1
+1006,1007,Mercedes-Benz,CLC-Klasse CLC 200,1
+1007,1008,Mercedes-Benz,CLC-Klasse CLC 220,1
+1008,1009,Mercedes-Benz,CLC-Klasse CLC 230,1
+1009,1010,Mercedes-Benz,CLC-Klasse CLC 250,1
+1010,1011,Mercedes-Benz,CLC-Klasse CLC 350,1
+1011,1012,Mercedes-Benz,CLK-Klasse CLK 200,1
+1012,1013,Mercedes-Benz,CLK-Klasse CLK 220,1
+1013,1014,Mercedes-Benz,CLK-Klasse CLK 230,1
+1014,1015,Mercedes-Benz,CLK-Klasse CLK 240,1
+1015,1016,Mercedes-Benz,CLK-Klasse CLK 270,1
+1016,1017,Mercedes-Benz,CLK-Klasse CLK 280,1
+1017,1018,Mercedes-Benz,CLK-Klasse CLK 320,1
+1018,1019,Mercedes-Benz,CLK-Klasse CLK 350,1
+1019,1020,Mercedes-Benz,CLK-Klasse CLK 430,1
+1020,1021,Mercedes-Benz,CLK-Klasse CLK 500,1
+1021,1022,Mercedes-Benz,CLK-Klasse CLK 55 AMG,1
+1022,1023,Mercedes-Benz,CLK-Klasse CLK 63 AMG,1
+1023,1024,Mercedes-Benz,CLS-Klasse CLS 220,1
+1024,1025,Mercedes-Benz,CLS-Klasse CLS 250,1
+1025,1026,Mercedes-Benz,CLS-Klasse CLS 280,1
+1026,1027,Mercedes-Benz,CLS-Klasse CLS 300,1
+1027,1028,Mercedes-Benz,CLS-Klasse CLS 320,1
+1028,1029,Mercedes-Benz,CLS-Klasse CLS 350,1
+1029,1030,Mercedes-Benz,CLS-Klasse CLS 400,1
+1030,1031,Mercedes-Benz,CLS-Klasse CLS 500,1
+1031,1032,Mercedes-Benz,CLS-Klasse CLS 55 AMG,1
+1032,1033,Mercedes-Benz,CLS-Klasse CLS 63 AMG,1
+1033,1034,Mercedes-Benz,CLS-Klasse CLS Shooting Brake,1
+1034,1035,Mercedes-Benz,E-Klasse E 200,1
+1035,1036,Mercedes-Benz,E-Klasse E 220,1
+1036,1037,Mercedes-Benz,E-Klasse E 230,1
+1037,1038,Mercedes-Benz,E-Klasse E 240,1
+1038,1039,Mercedes-Benz,E-Klasse E 250,1
+1039,1040,Mercedes-Benz,E-Klasse E 260,1
+1040,1041,Mercedes-Benz,E-Klasse E 270,1
+1041,1042,Mercedes-Benz,E-Klasse E 280,1
+1042,1043,Mercedes-Benz,E-Klasse E 290,1
+1043,1044,Mercedes-Benz,E-Klasse E 300,1
+1044,1045,Mercedes-Benz,E-Klasse E 320,1
+1045,1046,Mercedes-Benz,E-Klasse E 350,1
+1046,1047,Mercedes-Benz,E-Klasse E 36 AMG,1
+1047,1048,Mercedes-Benz,E-Klasse E 400,1
+1048,1049,Mercedes-Benz,E-Klasse E 420,1
+1049,1050,Mercedes-Benz,E-Klasse E 430,1
+1050,1051,Mercedes-Benz,E-Klasse E 50,1
+1051,1052,Mercedes-Benz,E-Klasse E 500,1
+1052,1053,Mercedes-Benz,E-Klasse E 55 AMG,1
+1053,1054,Mercedes-Benz,E-Klasse E 60 AMG,1
+1054,1055,Mercedes-Benz,E-Klasse E 63 AMG,1
+1055,1056,Mercedes-Benz,G-Klasse G 230,1
+1056,1057,Mercedes-Benz,G-Klasse G 240,1
+1057,1058,Mercedes-Benz,G-Klasse G 250,1
+1058,1059,Mercedes-Benz,G-Klasse G 270,1
+1059,1060,Mercedes-Benz,G-Klasse G 280,1
+1060,1061,Mercedes-Benz,G-Klasse G 290,1
+1061,1062,Mercedes-Benz,G-Klasse G 300,1
+1062,1063,Mercedes-Benz,G-Klasse G 320,1
+1063,1064,Mercedes-Benz,G-Klasse G 350,1
+1064,1065,Mercedes-Benz,G-Klasse G 400,1
+1065,1066,Mercedes-Benz,G-Klasse G 500,1
+1066,1067,Mercedes-Benz,G-Klasse G 55 AMG,1
+1067,1068,Mercedes-Benz,G-Klasse G 63 AMG,1
+1068,1069,Mercedes-Benz,G-Klasse G 65 AMG,1
+1069,1070,Mercedes-Benz,GL-Klasse GL 320,1
+1070,1071,Mercedes-Benz,GL-Klasse GL 350,1
+1071,1072,Mercedes-Benz,GL-Klasse GL 400,1
+1072,1073,Mercedes-Benz,GL-Klasse GL 420,1
+1073,1074,Mercedes-Benz,GL-Klasse GL 450,1
+1074,1075,Mercedes-Benz,GL-Klasse GL 500,1
+1075,1076,Mercedes-Benz,GL-Klasse GL 55 AMG,1
+1076,1077,Mercedes-Benz,GL-Klasse GL 63 AMG,1
+1077,1078,Mercedes-Benz,GLA-Klasse GLA 180,1
+1078,1079,Mercedes-Benz,GLA-Klasse GLA 200,1
+1079,1080,Mercedes-Benz,GLA-Klasse GLA 220,1
+1080,1081,Mercedes-Benz,GLA-Klasse GLA 250,1
+1081,1082,Mercedes-Benz,GLA-Klasse GLA 45 AMG,1
+1082,1083,Mercedes-Benz,GLE 450 AMG,1
+1083,1084,Mercedes-Benz,GLK-Klasse GLK 200,1
+1084,1085,Mercedes-Benz,GLK-Klasse GLK 220,1
+1085,1086,Mercedes-Benz,GLK-Klasse GLK 250,1
+1086,1087,Mercedes-Benz,GLK-Klasse GLK 280,1
+1087,1088,Mercedes-Benz,GLK-Klasse GLK 300,1
+1088,1089,Mercedes-Benz,GLK-Klasse GLK 320,1
+1089,1090,Mercedes-Benz,GLK-Klasse GLK 350,1
+1090,1091,Mercedes-Benz,MB 100,1
+1091,1092,Mercedes-Benz,ML-Klasse ML 230,1
+1092,1093,Mercedes-Benz,ML-Klasse ML 250,1
+1093,1094,Mercedes-Benz,ML-Klasse ML 270,1
+1094,1095,Mercedes-Benz,ML-Klasse ML 280,1
+1095,1096,Mercedes-Benz,ML-Klasse ML 300,1
+1096,1097,Mercedes-Benz,ML-Klasse ML 320,1
+1097,1098,Mercedes-Benz,ML-Klasse ML 350,1
+1098,1099,Mercedes-Benz,ML-Klasse ML 400,1
+1099,1100,Mercedes-Benz,ML-Klasse ML 420,1
+1100,1101,Mercedes-Benz,ML-Klasse ML 430,1
+1101,1102,Mercedes-Benz,ML-Klasse ML 450,1
+1102,1103,Mercedes-Benz,ML-Klasse ML 500,1
+1103,1104,Mercedes-Benz,ML-Klasse ML 55 AMG,1
+1104,1105,Mercedes-Benz,ML-Klasse ML 63 AMG,1
+1105,1106,Mercedes-Benz,R-Klasse R 280,1
+1106,1107,Mercedes-Benz,R-Klasse R 300,1
+1107,1108,Mercedes-Benz,R-Klasse R 320,1
+1108,1109,Mercedes-Benz,R-Klasse R 350,1
+1109,1110,Mercedes-Benz,R-Klasse R 500,1
+1110,1111,Mercedes-Benz,R-Klasse R 63 AMG,1
+1111,1112,Mercedes-Benz,S-Klasse S 250,1
+1112,1113,Mercedes-Benz,S-Klasse S 260,1
+1113,1114,Mercedes-Benz,S-Klasse S 280,1
+1114,1115,Mercedes-Benz,S-Klasse S 300,1
+1115,1116,Mercedes-Benz,S-Klasse S 320,1
+1116,1117,Mercedes-Benz,S-Klasse S 350,1
+1117,1118,Mercedes-Benz,S-Klasse S 400,1
+1118,1119,Mercedes-Benz,S-Klasse S 420,1
+1119,1120,Mercedes-Benz,S-Klasse S 430,1
+1120,1121,Mercedes-Benz,S-Klasse S 450,1
+1121,1122,Mercedes-Benz,S-Klasse S 500,1
+1122,1123,Mercedes-Benz,S-Klasse S 55,1
+1123,1124,Mercedes-Benz,S-Klasse S 550,1
+1124,1125,Mercedes-Benz,S-Klasse S 600,1
+1125,1126,Mercedes-Benz,S-Klasse S 63 AMG,1
+1126,1127,Mercedes-Benz,S-Klasse S 65 AMG,1
+1127,1128,Mercedes-Benz,SL-Klasse SL 280,1
+1128,1129,Mercedes-Benz,SL-Klasse SL 300,1
+1129,1130,Mercedes-Benz,SL-Klasse SL 320,1
+1130,1131,Mercedes-Benz,SL-Klasse SL 350,1
+1131,1132,Mercedes-Benz,SL-Klasse SL 380,1
+1132,1133,Mercedes-Benz,SL-Klasse SL 400,1
+1133,1134,Mercedes-Benz,SL-Klasse SL 420,1
+1134,1135,Mercedes-Benz,SL-Klasse SL 450,1
+1135,1136,Mercedes-Benz,SL-Klasse SL 500,1
+1136,1137,Mercedes-Benz,SL-Klasse SL 55 AMG,1
+1137,1138,Mercedes-Benz,SL-Klasse SL 560,1
+1138,1139,Mercedes-Benz,SL-Klasse SL 60 AMG,1
+1139,1140,Mercedes-Benz,SL-Klasse SL 600,1
+1140,1141,Mercedes-Benz,SL-Klasse SL 63 AMG,1
+1141,1142,Mercedes-Benz,SL-Klasse SL 65 AMG,1
+1142,1143,Mercedes-Benz,SL-Klasse SL 70 AMG,1
+1143,1144,Mercedes-Benz,SL-Klasse SL 73 AMG,1
+1144,1145,Mercedes-Benz,SLK-Klasse SLK 200,1
+1145,1146,Mercedes-Benz,SLK-Klasse SLK 230,1
+1146,1147,Mercedes-Benz,SLK-Klasse SLK 250,1
+1147,1148,Mercedes-Benz,SLK-Klasse SLK 280,1
+1148,1149,Mercedes-Benz,SLK-Klasse SLK 300,1
+1149,1150,Mercedes-Benz,SLK-Klasse SLK 32 AMG,1
+1150,1151,Mercedes-Benz,SLK-Klasse SLK 320,1
+1151,1152,Mercedes-Benz,SLK-Klasse SLK 350,1
+1152,1153,Mercedes-Benz,SLK-Klasse SLK 55 AMG,1
+1153,1154,Mercedes-Benz,SLR,1
+1154,1155,Mercedes-Benz,SLS AMG,1
+1155,1156,Mercedes-Benz,Sprinter,1
+1156,1157,Mercedes-Benz,V-Klasse V 200,1
+1157,1158,Mercedes-Benz,V-Klasse V 220,1
+1158,1159,Mercedes-Benz,V-Klasse V 230,1
+1159,1160,Mercedes-Benz,V-Klasse V 250,1
+1160,1161,Mercedes-Benz,V-Klasse V 280,1
+1161,1162,Mercedes-Benz,Vaneo,1
+1162,1163,Mercedes-Benz,Vario,1
+1163,1164,Mercedes-Benz,Viano,1
+1164,1165,Mercedes-Benz,Vito,1
+1165,1166,MG,MGA,1
+1166,1167,MG,MGB,1
+1167,1168,MG,MGF,1
+1168,1169,MG,Midget,1
+1169,1170,MG,Montego,1
+1170,1171,MG,TD,1
+1171,1172,MG,TF,1
+1172,1173,MG,ZR,1
+1173,1174,MG,ZS,1
+1174,1175,MG,ZT,1
+1175,1176,Microcar,DUГѓЖ’Г‹вЂ ,1
+1176,1177,Microcar,Flex,1
+1177,1178,Microcar,M.Go,1
+1178,1179,Microcar,M-8,1
+1179,1180,Microcar,MC1,1
+1180,1181,Microcar,MC2,1
+1181,1182,MINI,Cabrio Series Cooper Cabrio,1
+1182,1183,MINI,Cabrio Series Cooper D Cabrio,1
+1183,1184,MINI,Cabrio Series Cooper S Cabrio,1
+1184,1185,MINI,Cabrio Series Cooper SD Cabrio,1
+1185,1186,MINI,Cabrio Series John Cooper Works Cabrio,1
+1186,1187,MINI,Cabrio Series One Cabrio,1
+1187,1188,MINI,Clubman Series Cooper Clubman,1
+1188,1189,MINI,Clubman Series Cooper D Clubman,1
+1189,1190,MINI,Clubman Series Cooper S Clubman,1
+1190,1191,MINI,Clubman Series Cooper SD Clubman,1
+1191,1192,MINI,Clubman Series John Cooper Works Clubman,1
+1192,1193,MINI,Clubman Series One Clubman,1
+1193,1194,MINI,Clubman Series One D Clubman,1
+1194,1195,MINI,Clubvan,1
+1195,1196,MINI,Countryman Series Cooper Countryman,1
+1196,1197,MINI,Countryman Series Cooper D Countryman,1
+1197,1198,MINI,Countryman Series Cooper S Countryman,1
+1198,1199,MINI,Countryman Series Cooper SD Countryman,1
+1199,1200,MINI,Countryman Series John Cooper Works Countryman,1
+1200,1201,MINI,Countryman Series One Countryman,1
+1201,1202,MINI,Countryman Series One D Countryman,1
+1202,1203,MINI,Coupe Series Cooper CoupГѓЖ’Г‚В©,1
+1203,1204,MINI,Coupe Series Cooper S CoupГѓЖ’Г‚В©,1
+1204,1205,MINI,Coupe Series Cooper SD CoupГѓЖ’Г‚В©,1
+1205,1206,MINI,Coupe Series John Cooper Works CoupГѓЖ’Г‚В©,1
+1206,1207,MINI,MINI 1000,1
+1207,1208,MINI,MINI 1300,1
+1208,1209,MINI,MINI Cooper,1
+1209,1210,MINI,MINI Cooper D,1
+1210,1211,MINI,MINI Cooper S,1
+1211,1212,MINI,MINI Cooper SD,1
+1212,1213,MINI,MINI John Cooper Works,1
+1213,1214,MINI,MINI ONE,1
+1214,1215,MINI,MINI One D,1
+1215,1216,MINI,Paceman Series Cooper D Paceman,1
+1216,1217,MINI,Paceman Series Cooper Paceman,1
+1217,1218,MINI,Paceman Series Cooper S Paceman,1
+1218,1219,MINI,Paceman Series Cooper SD Paceman,1
+1219,1220,MINI,Paceman Series John Cooper Works Paceman,1
+1220,1221,MINI,Roadster Series Cooper Roadster,1
+1221,1222,MINI,Roadster Series Cooper S Roadster,1
+1222,1223,MINI,Roadster Series Cooper SD Roadster,1
+1223,1224,MINI,Roadster Series John Cooper Works Roadster,1
+1224,1225,Mitsubishi,3000 GT,1
+1225,1226,Mitsubishi,ASX,1
+1226,1227,Mitsubishi,Canter,1
+1227,1228,Mitsubishi,Carisma,1
+1228,1229,Mitsubishi,Colt,1
+1229,1230,Mitsubishi,Cordia,1
+1230,1231,Mitsubishi,Cosmos,1
+1231,1232,Mitsubishi,Diamante,1
+1232,1233,Mitsubishi,Eclipse,1
+1233,1234,Mitsubishi,Galant,1
+1234,1235,Mitsubishi,Galloper,1
+1235,1236,Mitsubishi,Grandis,1
+1236,1237,Mitsubishi,Electric Vehicle (i-MiEV),1
+1237,1238,Mitsubishi,L200,1
+1238,1239,Mitsubishi,L300,1
+1239,1240,Mitsubishi,L400,1
+1240,1241,Mitsubishi,Lancer,1
+1241,1242,Mitsubishi,Mirage,1
+1242,1243,Mitsubishi,Montero,1
+1243,1244,Mitsubishi,Outlander,1
+1244,1245,Mitsubishi,Pajero,1
+1245,1246,Mitsubishi,Pajero Pinin,1
+1246,1247,Mitsubishi,Pick-up,1
+1247,1248,Mitsubishi,Plug-in Hybrid Outlander,1
+1248,1249,Mitsubishi,Santamo,1
+1249,1250,Mitsubishi,Sapporo,1
+1250,1251,Mitsubishi,Sigma,1
+1251,1252,Mitsubishi,Space Gear,1
+1252,1253,Mitsubishi,Space Runner,1
+1253,1254,Mitsubishi,Space Star,1
+1254,1255,Mitsubishi,Space Wagon,1
+1255,1256,Mitsubishi,Starion,1
+1256,1257,Mitsubishi,Tredia,1
+1257,1258,Morgan,4/4,1
+1258,1259,Morgan,Aero 8,1
+1259,1260,Morgan,Plus 4,1
+1260,1261,Morgan,Plus 8,1
+1261,1262,Morgan,Roadster,1
+1262,1263,Nissan,100 NX,1
+1263,1264,Nissan,200 SX,1
+1264,1265,Nissan,240 SX,1
+1265,1266,Nissan,280 ZX,1
+1266,1267,Nissan,300 ZX,1
+1267,1268,Nissan,350Z,1
+1268,1269,Nissan,370Z,1
+1269,1270,Nissan,Almera,1
+1270,1271,Nissan,Almera Tino,1
+1271,1272,Nissan,Altima,1
+1272,1273,Nissan,Armada,1
+1273,1274,Nissan,Bluebird,1
+1274,1275,Nissan,Cabstar,1
+1275,1276,Nissan,Cargo,1
+1276,1277,Nissan,Cherry,1
+1277,1278,Nissan,Cube,1
+1278,1279,Nissan,e-NV200,1
+1279,1280,Nissan,Evalia,1
+1280,1281,Nissan,Frontier,1
+1281,1282,Nissan,GT-R,1
+1282,1283,Nissan,Interstar,1
+1283,1284,Nissan,Juke,1
+1284,1285,Nissan,King Cab,1
+1285,1286,Nissan,Kubistar,1
+1286,1287,Nissan,Laurel,1
+1287,1288,Nissan,Leaf,1
+1288,1289,Nissan,Maxima,1
+1289,1290,Nissan,Micra,1
+1290,1291,Nissan,Murano,1
+1291,1292,Nissan,Navara,1
+1292,1293,Nissan,Note,1
+1293,1294,Nissan,NP 300,1
+1294,1295,Nissan,NV200,1
+1295,1296,Nissan,NV400,1
+1296,1297,Nissan,Pathfinder,1
+1297,1298,Nissan,Patrol,1
+1298,1299,Nissan,PickUp,1
+1299,1300,Nissan,Pixo,1
+1300,1301,Nissan,Prairie,1
+1301,1302,Nissan,Primastar,1
+1302,1303,Nissan,Primera,1
+1303,1304,Nissan,Pulsar,1
+1304,1305,Nissan,Qashqai,1
+1305,1306,Nissan,Qashqai+2,1
+1306,1307,Nissan,Quest,1
+1307,1308,Nissan,Sentra,1
+1308,1309,Nissan,Serena,1
+1309,1310,Nissan,Silvia,1
+1310,1311,Nissan,Skyline,1
+1311,1312,Nissan,Sunny,1
+1312,1313,Nissan,Terrano,1
+1313,1314,Nissan,Tiida,1
+1314,1315,Nissan,Titan,1
+1315,1316,Nissan,Trade,1
+1316,1317,Nissan,Urvan,1
+1317,1318,Nissan,Vanette,1
+1318,1319,Nissan,X-Trail,1
+1319,1320,NSU,None,1
+1320,1321,Oldsmobile,Bravada,1
+1321,1322,Oldsmobile,Custom Cruiser,1
+1322,1323,Oldsmobile,Cutlass,1
+1323,1324,Oldsmobile,Delta 88,1
+1324,1325,Oldsmobile,Silhouette,1
+1325,1326,Oldsmobile,Supreme,1
+1326,1327,Oldsmobile,Toronado,1
+1327,1328,Opel,Adam,1
+1328,1329,Opel,Agila,1
+1329,1330,Opel,Ampera,1
+1330,1331,Opel,Antara,1
+1331,1332,Opel,Arena,1
+1332,1333,Opel,Ascona,1
+1333,1334,Opel,Astra,1
+1334,1335,Opel,Calibra,1
+1335,1336,Opel,Campo,1
+1336,1337,Opel,Cascada,1
+1337,1338,Opel,Cavalier,1
+1338,1339,Opel,Combo,1
+1339,1340,Opel,Commodore,1
+1340,1341,Opel,Corsa,1
+1341,1342,Opel,Diplomat,1
+1342,1343,Opel,Frontera,1
+1343,1344,Opel,GT,1
+1344,1345,Opel,Insignia,1
+1345,1346,Opel,Insignia CT,1
+1346,1347,Opel,Kadett,1
+1347,1348,Opel,Karl,1
+1348,1349,Opel,Manta,1
+1349,1350,Opel,Meriva,1
+1350,1351,Opel,Mokka,1
+1351,1352,Opel,Monterey,1
+1352,1353,Opel,Monza,1
+1353,1354,Opel,Movano,1
+1354,1355,Opel,Nova,1
+1355,1356,Opel,Omega,1
+1356,1357,Opel,Pick Up Sportscap,1
+1357,1358,Opel,Rekord,1
+1358,1359,Opel,Senator,1
+1359,1360,Opel,Signum,1
+1360,1361,Opel,Sintra,1
+1361,1362,Opel,Speedster,1
+1362,1363,Opel,Tigra,1
+1363,1364,Opel,Vectra,1
+1364,1365,Opel,Vivaro,1
+1365,1366,Opel,Zafira,1
+1366,1367,Opel,Zafira Tourer,1
+1367,1368,Pagani,None,1
+1368,1369,Peugeot,1007,1
+1369,1370,Peugeot,104,1
+1370,1371,Peugeot,106,1
+1371,1372,Peugeot,107,1
+1372,1373,Peugeot,108,1
+1373,1374,Peugeot,2008,1
+1374,1375,Peugeot,204,1
+1375,1376,Peugeot,205,1
+1376,1377,Peugeot,206,1
+1377,1378,Peugeot,207,1
+1378,1379,Peugeot,208,1
+1379,1380,Peugeot,3008,1
+1380,1381,Peugeot,301,1
+1381,1382,Peugeot,304,1
+1382,1383,Peugeot,305,1
+1383,1384,Peugeot,306,1
+1384,1385,Peugeot,307,1
+1385,1386,Peugeot,308,1
+1386,1387,Peugeot,309,1
+1387,1388,Peugeot,4007,1
+1388,1389,Peugeot,4008,1
+1389,1390,Peugeot,404,1
+1390,1391,Peugeot,405,1
+1391,1392,Peugeot,406,1
+1392,1393,Peugeot,407,1
+1393,1394,Peugeot,5008,1
+1394,1395,Peugeot,504,1
+1395,1396,Peugeot,505,1
+1396,1397,Peugeot,508,1
+1397,1398,Peugeot,604,1
+1398,1399,Peugeot,605,1
+1399,1400,Peugeot,607,1
+1400,1401,Peugeot,806,1
+1401,1402,Peugeot,807,1
+1402,1403,Peugeot,Bipper,1
+1403,1404,Peugeot,Bipper Tepee,1
+1404,1405,Peugeot,Boxer,1
+1405,1406,Peugeot,Expert,1
+1406,1407,Peugeot,Expert Tepee,1
+1407,1408,Peugeot,iOn,1
+1408,1409,Peugeot,J5,1
+1409,1410,Peugeot,Partner,1
+1410,1411,Peugeot,Partner Tepee,1
+1411,1412,Peugeot,RCZ,1
+1412,1413,Peugeot,TePee,1
+1413,1414,Piaggio,APE,1
+1414,1415,Piaggio,APE TM,1
+1415,1416,Piaggio,Porter,1
+1416,1417,Plymouth,Prowler,1
+1417,1418,Pontiac,6000,1
+1418,1419,Pontiac,Bonneville,1
+1419,1420,Pontiac,Fiero,1
+1420,1421,Pontiac,Firebird,1
+1421,1422,Pontiac,G6,1
+1422,1423,Pontiac,Grand-Am,1
+1423,1424,Pontiac,Grand-Prix,1
+1424,1425,Pontiac,GTO,1
+1425,1426,Pontiac,Montana,1
+1426,1427,Pontiac,Solstice,1
+1427,1428,Pontiac,Sunbird,1
+1428,1429,Pontiac,Sunfire,1
+1429,1430,Pontiac,Targa,1
+1430,1431,Pontiac,Trans Am,1
+1431,1432,Pontiac,Trans Sport,1
+1432,1433,Pontiac,Vibe,1
+1433,1434,Porsche,356,1
+1434,1435,Porsche,911 911,1
+1435,1436,Porsche,911 930,1
+1436,1437,Porsche,911 964,1
+1437,1438,Porsche,911 991,1
+1438,1439,Porsche,911 993,1
+1439,1440,Porsche,911 996,1
+1440,1441,Porsche,911 997,1
+1441,1442,Porsche,912,1
+1442,1443,Porsche,914,1
+1443,1444,Porsche,918,1
+1444,1445,Porsche,924,1
+1445,1446,Porsche,928,1
+1446,1447,Porsche,944,1
+1447,1448,Porsche,959,1
+1448,1449,Porsche,962,1
+1449,1450,Porsche,968,1
+1450,1451,Porsche,Boxster,1
+1451,1452,Porsche,Carrera GT,1
+1452,1453,Porsche,Cayenne,1
+1453,1454,Porsche,Cayman,1
+1454,1455,Porsche,Macan,1
+1455,1456,Porsche,Panamera,1
+1456,1457,Proton,300 Serie,1
+1457,1458,Proton,400 Serie,1
+1458,1459,Renault,Alpine A110,1
+1459,1460,Renault,Alpine A310,1
+1460,1461,Renault,Alpine V6,1
+1461,1462,Renault,Avantime,1
+1462,1463,Renault,Captur,1
+1463,1464,Renault,Clio,1
+1464,1465,Renault,Coupe,1
+1465,1466,Renault,Espace,1
+1466,1467,Renault,Express,1
+1467,1468,Renault,Fluence,1
+1468,1469,Renault,Fuego,1
+1469,1470,Renault,Grand Espace,1
+1470,1471,Renault,Grand Modus,1
+1471,1472,Renault,Grand Scenic,1
+1472,1473,Renault,Kadjar,1
+1473,1474,Renault,Kangoo,1
+1474,1475,Renault,Koleos,1
+1475,1476,Renault,Laguna,1
+1476,1477,Renault,Latitude,1
+1477,1478,Renault,Mascott,1
+1478,1479,Renault,Master,1
+1479,1480,Renault,Megane,1
+1480,1481,Renault,Modus,1
+1481,1482,Renault,P 1400,1
+1482,1483,Renault,R 11,1
+1483,1484,Renault,R 14,1
+1484,1485,Renault,R 18,1
+1485,1486,Renault,R 19,1
+1486,1487,Renault,R 20,1
+1487,1488,Renault,R 21,1
+1488,1489,Renault,R 25,1
+1489,1490,Renault,R 30,1
+1490,1491,Renault,R 4,1
+1491,1492,Renault,R 5,1
+1492,1493,Renault,R 6,1
+1493,1494,Renault,R 9,1
+1494,1495,Renault,Rapid,1
+1495,1496,Renault,Safrane,1
+1496,1497,Renault,Scenic,1
+1497,1498,Renault,Spider,1
+1498,1499,Renault,Trafic,1
+1499,1500,Renault,Twingo,1
+1500,1501,Renault,Twizy,1
+1501,1502,Renault,Vel Satis,1
+1502,1503,Renault,Wind,1
+1503,1504,Renault,ZOE,1
+1504,1505,Rolls-Royce,Corniche,1
+1505,1506,Rolls-Royce,Flying Spur,1
+1506,1507,Rolls-Royce,Ghost,1
+1507,1508,Rolls-Royce,Park Ward,1
+1508,1509,Rolls-Royce,Phantom,1
+1509,1510,Rolls-Royce,Silver Cloud,1
+1510,1511,Rolls-Royce,Silver Dawn,1
+1511,1512,Rolls-Royce,Silver Seraph,1
+1512,1513,Rolls-Royce,Silver Shadow,1
+1513,1514,Rolls-Royce,Silver Spirit,1
+1514,1515,Rolls-Royce,Silver Spur,1
+1515,1516,Rolls-Royce,Wraith,1
+1516,1517,Rover,100,1
+1517,1518,Rover,111,1
+1518,1519,Rover,114,1
+1519,1520,Rover,115,1
+1520,1521,Rover,200,1
+1521,1522,Rover,213,1
+1522,1523,Rover,214,1
+1523,1524,Rover,216,1
+1524,1525,Rover,218,1
+1525,1526,Rover,220,1
+1526,1527,Rover,25,1
+1527,1528,Rover,400,1
+1528,1529,Rover,414,1
+1529,1530,Rover,416,1
+1530,1531,Rover,418,1
+1531,1532,Rover,420,1
+1532,1533,Rover,45,1
+1533,1534,Rover,600,1
+1534,1535,Rover,618,1
+1535,1536,Rover,620,1
+1536,1537,Rover,623,1
+1537,1538,Rover,75,1
+1538,1539,Rover,800,1
+1539,1540,Rover,820,1
+1540,1541,Rover,825,1
+1541,1542,Rover,827,1
+1542,1543,Rover,City Rover,1
+1543,1544,Rover,Metro,1
+1544,1545,Rover,Montego,1
+1545,1546,Rover,SD,1
+1546,1547,Rover,Streetwise,1
+1547,1548,Ruf,None,1
+1548,1549,Saab,9-3,1
+1549,1550,Saab,9-4X,1
+1550,1551,Saab,9-5,1
+1551,1552,Saab,9-7X,1
+1552,1553,Saab,90,1
+1553,1554,Saab,900,1
+1554,1555,Saab,9000,1
+1555,1556,Saab,96,1
+1556,1557,Saab,99,1
+1557,1558,Santana,None,1
+1558,1559,Seat,Alhambra,1
+1559,1560,Seat,Altea,1
+1560,1561,Seat,Arosa,1
+1561,1562,Seat,Cordoba,1
+1562,1563,Seat,Exeo,1
+1563,1564,Seat,Ibiza,1
+1564,1565,Seat,Inca,1
+1565,1566,Seat,Leon,1
+1566,1567,Seat,Malaga,1
+1567,1568,Seat,Marbella,1
+1568,1569,Seat,Mii,1
+1569,1570,Seat,Terra,1
+1570,1571,Seat,Toledo,1
+1571,1572,Skoda,105,1
+1572,1573,Skoda,120,1
+1573,1574,Skoda,130,1
+1574,1575,Skoda,135,1
+1575,1576,Skoda,Citigo,1
+1576,1577,Skoda,Fabia,1
+1577,1578,Skoda,Favorit,1
+1578,1579,Skoda,Felicia,1
+1579,1580,Skoda,Forman,1
+1580,1581,Skoda,Octavia,1
+1581,1582,Skoda,Pick-up,1
+1582,1583,Skoda,Praktik,1
+1583,1584,Skoda,Rapid,1
+1584,1585,Skoda,Roomster,1
+1585,1586,Skoda,Superb,1
+1586,1587,Skoda,Yeti,1
+1587,1588,Smart,Crossblade,1
+1588,1589,Smart,ForFour,1
+1589,1590,Smart,ForTwo,1
+1590,1591,Smart,Roadster,1
+1591,1592,speedART,None,1
+1592,1593,Spyker,C8,1
+1593,1594,Spyker,C8 AILERON,1
+1594,1595,Spyker,C8 DOUBLE 12 S,1
+1595,1596,Spyker,C8 LAVIOLETTE SWB,1
+1596,1597,Spyker,C8 SPYDER SWB,1
+1597,1598,Ssangyong,Actyon,1
+1598,1599,Ssangyong,Family,1
+1599,1600,Ssangyong,Korando,1
+1600,1601,Ssangyong,Kyron,1
+1601,1602,Ssangyong,MUSSO,1
+1602,1603,Ssangyong,REXTON,1
+1603,1604,Ssangyong,Rodius,1
+1604,1605,Ssangyong,Tivoli,1
+1605,1606,Subaru,B9 Tribeca,1
+1606,1607,Subaru,Baja,1
+1607,1608,Subaru,BRZ,1
+1608,1609,Subaru,Forester,1
+1609,1610,Subaru,Impreza,1
+1610,1611,Subaru,Justy,1
+1611,1612,Subaru,Legacy,1
+1612,1613,Subaru,Libero,1
+1613,1614,Subaru,OUTBACK,1
+1614,1615,Subaru,SVX,1
+1615,1616,Subaru,Trezia,1
+1616,1617,Subaru,Tribeca,1
+1617,1618,Subaru,Vivio,1
+1618,1619,Subaru,XT,1
+1619,1620,Subaru,XV,1
+1620,1621,Suzuki,Alto,1
+1621,1622,Suzuki,Baleno,1
+1622,1623,Suzuki,Cappuccino,1
+1623,1624,Suzuki,Carry,1
+1624,1625,Suzuki,Celerio,1
+1625,1626,Suzuki,Grand Vitara,1
+1626,1627,Suzuki,Ignis,1
+1627,1628,Suzuki,Jimny,1
+1628,1629,Suzuki,Kizashi,1
+1629,1630,Suzuki,Liana,1
+1630,1631,Suzuki,LJ,1
+1631,1632,Suzuki,SJ Samurai,1
+1632,1633,Suzuki,Splash,1
+1633,1634,Suzuki,Super-Carry,1
+1634,1635,Suzuki,Swift,1
+1635,1636,Suzuki,SX4,1
+1636,1637,Suzuki,SX4 S-Cross,1
+1637,1638,Suzuki,Vitara,1
+1638,1639,Suzuki,Wagon R+,1
+1639,1640,Suzuki,X-90,1
+1640,1641,Talbot,Horizon,1
+1641,1642,Talbot,Samba,1
+1642,1643,Tata,Indica,1
+1643,1644,Tata,Indigo,1
+1644,1645,Tata,Nano,1
+1645,1646,Tata,Safari,1
+1646,1647,Tata,Sumo,1
+1647,1648,Tata,Telcoline,1
+1648,1649,Tata,Telcosport,1
+1649,1650,Tata,Xenon,1
+1650,1651,TECHART,None,1
+1651,1652,Tesla,Model 3,1
+1652,1653,Tesla,Model S,1
+1653,1654,Tesla,Model X,1
+1654,1655,Tesla,Roadster,1
+1655,1656,Toyota,4-Runner,1
+1656,1657,Toyota,Auris,1
+1657,1658,Toyota,Auris Touring Sports,1
+1658,1659,Toyota,Avalon,1
+1659,1660,Toyota,Avensis,1
+1660,1661,Toyota,Avensis Verso,1
+1661,1662,Toyota,Aygo,1
+1662,1663,Toyota,Camry,1
+1663,1664,Toyota,Carina,1
+1664,1665,Toyota,Celica,1
+1665,1666,Toyota,Corolla,1
+1666,1667,Toyota,Corolla Verso,1
+1667,1668,Toyota,Cressida,1
+1668,1669,Toyota,Crown,1
+1669,1670,Toyota,Dyna,1
+1670,1671,Toyota,FCV,1
+1671,1672,Toyota,FJ,1
+1672,1673,Toyota,GT86,1
+1673,1674,Toyota,Hiace,1
+1674,1675,Toyota,Highlander,1
+1675,1676,Toyota,Hilux,1
+1676,1677,Toyota,IQ,1
+1677,1678,Toyota,Land Cruiser,1
+1678,1679,Toyota,Lite-Ace,1
+1679,1680,Toyota,MR 2,1
+1680,1681,Toyota,Paseo,1
+1681,1682,Toyota,Picnic,1
+1682,1683,Toyota,Previa,1
+1683,1684,Toyota,Prius,1
+1684,1685,Toyota,Prius+,1
+1685,1686,Toyota,Proace,1
+1686,1687,Toyota,RAV 4,1
+1687,1688,Toyota,Sequoia,1
+1688,1689,Toyota,Sienna,1
+1689,1690,Toyota,Starlet,1
+1690,1691,Toyota,Supra,1
+1691,1692,Toyota,Tacoma,1
+1692,1693,Toyota,Tercel,1
+1693,1694,Toyota,Tundra,1
+1694,1695,Toyota,Urban Cruiser,1
+1695,1696,Toyota,Verso,1
+1696,1697,Toyota,Verso-S,1
+1697,1698,Toyota,Yaris,1
+1698,1699,Trabant,601,1
+1699,1700,Triumph,Dolomite,1
+1700,1701,Triumph,Moss,1
+1701,1702,Triumph,Spitfire,1
+1702,1703,Triumph,TR3,1
+1703,1704,Triumph,TR4,1
+1704,1705,Triumph,TR5,1
+1705,1706,Triumph,TR6,1
+1706,1707,Triumph,TR7,1
+1707,1708,Triumph,TR8,1
+1708,1709,TVR,Chimaera,1
+1709,1710,TVR,Griffith,1
+1710,1711,TVR,Tuscan,1
+1711,1712,Volkswagen,181,1
+1712,1713,Volkswagen,Amarok,1
+1713,1714,Volkswagen,Beetle,1
+1714,1715,Volkswagen,Bora,1
+1715,1716,Volkswagen,Buggy,1
+1716,1717,Volkswagen,Caddy,1
+1717,1718,Volkswagen,CC,1
+1718,1719,Volkswagen,Corrado,1
+1719,1720,Volkswagen,Crafter,1
+1720,1721,Volkswagen,Eos,1
+1721,1722,Volkswagen,Fox,1
+1722,1723,Volkswagen,Golf Golf,1
+1723,1724,Volkswagen,Golf Golf Plus,1
+1724,1725,Volkswagen,Golf Golf Sportsvan,1
+1725,1726,Volkswagen,Iltis,1
+1726,1727,Volkswagen,Jetta,1
+1727,1728,Volkswagen,Karmann Ghia,1
+1728,1729,Volkswagen,KГѓЖ’Г‚В¤fer,1
+1729,1730,Volkswagen,LT,1
+1730,1731,Volkswagen,Lupo,1
+1731,1732,Volkswagen,New Beetle,1
+1732,1733,Volkswagen,Passat Passat,1
+1733,1734,Volkswagen,Passat Passat CC,1
+1734,1735,Volkswagen,Phaeton,1
+1735,1736,Volkswagen,Polo,1
+1736,1737,Volkswagen,Routan,1
+1737,1738,Volkswagen,Santana,1
+1738,1739,Volkswagen,Scirocco,1
+1739,1740,Volkswagen,Sharan,1
+1740,1741,Volkswagen,T1,1
+1741,1742,Volkswagen,T2,1
+1742,1743,Volkswagen,T3 T3 Caravelle,1
+1743,1744,Volkswagen,T3 T3 Multivan,1
+1744,1745,Volkswagen,T3 T3 other,1
+1745,1746,Volkswagen,T3 T3 Kombi,1
+1746,1747,Volkswagen,T4 T4 California,1
+1747,1748,Volkswagen,T4 T4 Caravelle,1
+1748,1749,Volkswagen,T4 T4 Multivan,1
+1749,1750,Volkswagen,T4 T4 other,1
+1750,1751,Volkswagen,T4 T4 Kombi,1
+1751,1752,Volkswagen,T5 T5 California,1
+1752,1753,Volkswagen,T5 T5 Caravelle,1
+1753,1754,Volkswagen,T5 T5 Multivan,1
+1754,1755,Volkswagen,T5 T5 Shuttle,1
+1755,1756,Volkswagen,T5 T5 other,1
+1756,1757,Volkswagen,T5 T5 Kombi,1
+1757,1758,Volkswagen,T6 T6 California,1
+1758,1759,Volkswagen,T6 T6 Caravelle,1
+1759,1760,Volkswagen,T6 T6 Kombi,1
+1760,1761,Volkswagen,T6 T6 Multivan,1
+1761,1762,Volkswagen,T6 T6 other,1
+1762,1763,Volkswagen,Taro,1
+1763,1764,Volkswagen,Tiguan,1
+1764,1765,Volkswagen,Touareg,1
+1765,1766,Volkswagen,Touran,1
+1766,1767,Volkswagen,up!,1
+1767,1768,Volkswagen,Vento,1
+1768,1769,Volkswagen,XL1,1
+1769,1770,Volvo,240,1
+1770,1771,Volvo,244,1
+1771,1772,Volvo,245,1
+1772,1773,Volvo,262,1
+1773,1774,Volvo,264,1
+1774,1775,Volvo,340,1
+1775,1776,Volvo,360,1
+1776,1777,Volvo,440,1
+1777,1778,Volvo,460,1
+1778,1779,Volvo,480,1
+1779,1780,Volvo,740,1
+1780,1781,Volvo,744,1
+1781,1782,Volvo,745,1
+1782,1783,Volvo,760,1
+1783,1784,Volvo,780,1
+1784,1785,Volvo,850,1
+1785,1786,Volvo,855,1
+1786,1787,Volvo,940,1
+1787,1788,Volvo,944,1
+1788,1789,Volvo,945,1
+1789,1790,Volvo,960,1
+1790,1791,Volvo,965,1
+1791,1792,Volvo,Amazon,1
+1792,1793,Volvo,C30,1
+1793,1794,Volvo,C70,1
+1794,1795,Volvo,Polar,1
+1795,1796,Volvo,S40,1
+1796,1797,Volvo,S60,1
+1797,1798,Volvo,S70,1
+1798,1799,Volvo,S80,1
+1799,1800,Volvo,S90,1
+1800,1801,Volvo,V40,1
+1801,1802,Volvo,V40 CC,1
+1802,1803,Volvo,V50,1
+1803,1804,Volvo,V60,1
+1804,1805,Volvo,V70,1
+1805,1806,Volvo,V90,1
+1806,1807,Volvo,XC 60,1
+1807,1808,Volvo,XC 70,1
+1808,1809,Volvo,XC 90,1
+1809,1810,Wartburg,311,1
+1810,1811,Wartburg,353,1
+1811,1812,Westfield,None,1
+1812,1813,Wiesmann,MF 25,1
+1813,1814,Wiesmann,MF 28,1
+1814,1815,Wiesmann,MF 3,1
+1815,1816,Wiesmann,MF 30,1
+1816,1817,Wiesmann,MF 35,1
+1817,1818,Wiesmann,MF 4,1
+1818,1819,Wiesmann,MF 5,1

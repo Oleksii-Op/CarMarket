@@ -168,7 +168,7 @@ class UserRelationDTO(UserDTO):
         validate_email_address(cls, address: str)
         validate_phone_number(cls, number: str)
     """
-
+    # Mapping
     address: "UserAddressDTO"
     # advertisements: List["AdvertisementDTO"]
     # sales_records: List["SalesRecords"]

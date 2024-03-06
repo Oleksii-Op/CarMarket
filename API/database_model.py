@@ -5,36 +5,17 @@ from sqlalchemy import (create_engine, Integer, String, DateTime,
                         CheckConstraint, Index)
 
 from sqlalchemy.orm import (relationship, Mapped,
-                            validates, mapped_column, DeclarativeBase)
+                            mapped_column, DeclarativeBase)
 
-from aux_annotations.annotations import created_at, updated_at
-from API.Validators.user_input.gender_valid import gender_validator_func
-from Validators.user_input.phone_number_valid import phone_number_validator_func
-from Validators.user_input.email_valid import email_validator_func
-from Validators.user_input.name_valid import name_validator_func
-from Validators.user_input.username_valid import username_validate_func
-from Validators.address_input.address_valid import address_validator_func
-from Validators.address_input.state_valid import state_validator_func
-from Validators.address_input.zip_code_valid import zip_code_validator_func
-from conn_to_database import select_database
+from aux_annotations.custom_annotations import created_at, updated_at
+
 from config import settings
 import enum
 
 
-# str_256 = Annotated[str, 256]
-
 class Base(DeclarativeBase):
     """Base class for SQLAlchemy models."""
 
-    # type_annotations_map = {
-    #     str_256: String(256)
-    # }
-    def __repr__(self):
-        # cols = [repr(getattr(self, c.name)) for c in self.__table__.columns]
-        cols = []
-        for col in self.__table__.columns.keys():
-            cols.append(f"{col}={getattr(self, col)}")
-            return f"{self.__class__.__name__} {",".join(cols)}"
 
 
 class Address(Base):
@@ -88,9 +69,10 @@ class User(Base):
             gender (str): The gender.
             registered_at (datetime): The registration timestamp.
             updated_at (datetime): The last update timestamp.
-            address (Address): The related address.
+            addresses (Address): The related address.
             advertisements (list of Advertisement): The related advertisements.
-            sales_records (list of SalesRecords): The related sales records.
+            sales_as_seller (list of SalesRecords): The related sales records as a seller.
+            sales_as_buyer (list of SalesRecords): The related sales records as a buyer.
         """
 
     __tablename__ = 'users'
@@ -119,19 +101,19 @@ class User(Base):
     # : Mapped[List["SalesRecords"]] = relationship(
     #     back_populates='user')
 
-    sales_as_seller: Mapped["SalesRecords"] = relationship(
+    sales_as_seller: Mapped[List["SalesRecords"]] = relationship(
         back_populates="seller", foreign_keys="[SalesRecord.seller_id]"
     )
 
-    sales_as_buyer: Mapped["SalesRecords"] = relationship(
+    sales_as_buyer: Mapped[List["SalesRecords"]] = relationship(
         back_populates="buyer", foreign_keys="[SalesRecords.buyer_id]"
     )
 
     __table_args__ = (
         UniqueConstraint('address_id'),
         # Index('title_index', 'title'),
-        # CheckConstraint('gender IN ("male", "female", "other", "unknown")'),
-        # CheckConstraint('user_property IN ("r", "b")'),
+        CheckConstraint('gender IN ("male", "female", "other", "unknown")'),
+        CheckConstraint('user_property IN ("r", "b")'),
     )
 
     def __repr__(self) -> str:
@@ -163,11 +145,14 @@ class SalesRecords(Base):
     sale_date: Mapped[created_at]
 
     seller_id: Mapped["User"] = mapped_column(ForeignKey('users.user_id'))
-    buyer_id: Mapped[Optional["User"]] = mapped_column(ForeignKey('users.user_id'))
-    ad_id: Mapped[int] = mapped_column(ForeignKey('advertisements.ad_id'))
+    buyer_id: Mapped["User"] = mapped_column(ForeignKey('users.user_id'))
 
-    seller: Mapped["User"] = relationship("User", foreign_keys=seller_id, uselist=False)
-    buyer: Mapped["User"] = relationship("User", foreign_keys=buyer_id, uselist=False)
+    advertisement_id: Mapped[int] = mapped_column(ForeignKey('advertisements.ad_id'))
+
+    seller: Mapped["User"] = relationship(
+        "User", back_populates="users.sales_as_seller", foreign_keys=[seller_id])
+    buyer: Mapped["User"] = relationship(
+        "User", back_populates="users.sales_as_buyer", foreign_keys=[buyer_id])
 
     advertisement: Mapped["Advertisement"] = relationship(back_populates='sales_records')
 
@@ -176,7 +161,7 @@ class SalesRecords(Base):
                 f" sale_date={self.sale_date},"
                 f" seller_id={self.seller_id},"
                 f" buyer_id={self.buyer_id},"
-                f" ad_id={self.ad_id})")
+                f" ad_id={self.advertisement_id})")
 
 
 class Category(Base):
@@ -302,13 +287,13 @@ class Advertisement(Base):
         back_populates="advertisements"
     )
 
-    # __table_args__ = (
-    #     CheckConstraint(price > 0),
-    #     CheckConstraint(mileage > 0),
-    #     CheckConstraint(power_output > 0),
-    #     CheckConstraint(engine_volume > 0),
-    #     CheckConstraint(average_consumption > 0),
-    # )
+    __table_args__ = (
+        CheckConstraint(price > 0),
+        CheckConstraint(mileage > 0),
+        CheckConstraint(power_output > 0),
+        CheckConstraint(engine_volume > 0),
+        CheckConstraint(average_consumption > 0),
+    )
 
     def __repr__(self) -> str:
         return (f"Advertisement(ad_id={self.ad_id},"
@@ -375,11 +360,6 @@ class Vehicle(Base):
                 f" category_id={self.category_id})")
 
 
-class AdvertisementReplied(Base):
-    pass
-    # __tablename__ = 'advertisement_replied'
-
-
 if __name__ == "__main__":
     # By default, the engine is created using the environment variables
     # from .env file.
@@ -389,6 +369,10 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
 
-class UserType(enum.Enum):
-    regular_user = 'regular_user'
-    business_user = 'business_user'
+# class UserType(enum.Enum):
+#     regular_user = 'regular_user'
+#     business_user = 'business_user'
+
+# class AdvertisementReplied(Base):
+#     pass
+#     # __tablename__ = 'advertisement_replied'

@@ -76,3 +76,13 @@ def username_validate_func(username: str, echo: Optional[bool] = False) -> str:
             print("\n\033[1;31;40mError: ", error, "\033[0m\n")
 
             username = input('Please enter your username: ')
+
+def username_validate_func_perf(username: str):
+    # TODO: Docstring
+    if len(username) < 6:
+        return False
+    if len(username) > 20:
+        return False
+    if any(p in username for p in punctuation):
+        return False
+    return True

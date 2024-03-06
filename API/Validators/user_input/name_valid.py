@@ -114,3 +114,17 @@ def name_validator_func(name: str, echo: Optional[bool] = False) -> str:
             print("\n\033[1;31;40mError: ", error, "\033[0m\n")
 
             name = input('Please enter your name again: ')
+
+def name_validator_func_perf(name: str) -> bool:
+    # TODO: Docstring
+    if not isinstance(name, str):
+        return False
+    if not name:
+        return False
+    if len(name) > 20:
+        return False
+    if any(p in name for p in punctuation):
+        return False
+    if any(p in name for p in digits):
+        return False
+    return True

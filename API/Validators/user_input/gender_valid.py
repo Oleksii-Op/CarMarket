@@ -72,3 +72,13 @@ def gender_validator_func(gender: str, echo: Optional[bool] = False) -> str:
             print("Choose from: male, female, other, unknown")
 
             gender = input('Please enter your gender: ')
+
+def gender_validator_func_perf(gender: str) -> bool:
+    # TODO: Docstring
+    if not isinstance(gender, str):
+        return False
+    if not gender:
+        return False
+    if gender not in ['male', 'female', 'other', 'unknown']:
+        return False
+    return True

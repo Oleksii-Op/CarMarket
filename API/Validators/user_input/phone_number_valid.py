@@ -14,7 +14,7 @@ def is_valid_number(number: str) -> bool:
         Returns:
             bool: True if the number is a valid phone number, False otherwise.
         """
-    p_number = phonenumbers.parse(number)
+    p_number = phonenumbers.parse(number, region="GB")
     return phonenumbers.is_possible_number(p_number)
 
 
@@ -89,3 +89,10 @@ def phone_number_validator_func(number: str, echo: Optional[bool] = False) -> st
 
             number = input('Please enter your valid phone number: ')
 
+def phone_number_validator_func_perf(number: str) -> bool:
+    # TODO: Docstring
+    if not number or not isinstance(number, str):
+        return False
+    if not is_valid_number(number):
+        return False
+    return True

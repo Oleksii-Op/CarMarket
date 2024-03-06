@@ -37,7 +37,7 @@ def email_validator_decorator(
         Wrapper function that validates the email address before calling the input function.
 
         Args:
-            email address (str): The name to be validated.
+            address (str): The name to be validated.
 
         Returns:
             str: The validated email address.
@@ -64,7 +64,7 @@ def email_validator_func(address: str, echo: Optional[bool] = False) -> str:
         Function that validates the email address.
 
         Args:
-            email address (str): The email address to be validated.
+            address (str): The email address to be validated.
 
             echo (bool, optional): Whether to print the validation result. Defaults to False.
 
@@ -89,3 +89,12 @@ def email_validator_func(address: str, echo: Optional[bool] = False) -> str:
             print("\n\033[1;31;40mError: ", error, "\033[0m\n")
 
             address = input('Please enter valid email address: ')
+
+
+def email_validator_func_perf(address: str) -> bool:
+    # TODO: Docstring
+    if not address or not isinstance(address, str):
+        return False
+    if not is_valid_email(address):
+        return False
+    return True

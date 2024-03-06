@@ -1,6 +1,6 @@
 from database_model import User, create_engine, Address
-from create_fields.new_user import NewUser
-from create_fields.create_address import UserAddress
+from create_fields.userDTO import UserAddDTO
+from create_fields.addressDTO import UserAddressAddDTO
 from sqlalchemy import text, select
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
@@ -15,6 +15,7 @@ from API.Validators.address_input.address_valid import address_validator_func
 from API.Validators.address_input.state_valid import state_validator_func
 from API.Validators.address_input.zip_code_valid import zip_code_validator_func
 import hashlib
+
 
 
 def create_new_user() -> None:
@@ -60,10 +61,11 @@ def create_new_user() -> None:
         state = state_validator_func(input('State: '), echo=True)
         zip_code = zip_code_validator_func(input('(Compulsory field) Zip code: '), echo=True)
         street_address = address_validator_func(input('Street address: '), echo=True)
+
         address_hashable = hashlib.sha256(
             (country + city + street_address).encode('utf-8')).hexdigest()
 
-        create_address = UserAddress.model_validate({
+        create_address = UserAddressAddDTO.model_validate({
             'country': country,
             'city': city,
             'state': state,
@@ -79,7 +81,7 @@ def create_new_user() -> None:
             stmt = select(Address.address_id).where(Address.address_hash == address_hashable)
             address_id = session.execute(stmt).scalar()
 
-            create_user = NewUser.model_validate({
+            create_user = UserAddDTO.model_validate({
                 'username': username,
                 'first_name': fist_name,
                 'last_name': last_name,
@@ -103,4 +105,3 @@ def create_new_user() -> None:
             print(e)
             print('Rolled back')
 
-create_new_user()
