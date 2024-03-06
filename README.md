@@ -1,6 +1,6 @@
 # Getting Started
 
-## Car Marketplace
+## Car Marketplace (under development)
 
 #### This project is an implementation of a simple car marketplace database model and data interaction logic for querying data in a simple and understood manner to users (including filtering) as real car markets back-end structure do.  
 
@@ -50,7 +50,7 @@ business needs, for example:
   SQLAlchemy's mapped model later. You can see database modeling below as it has a lot of text.
   
 
-- Setting Docker compose file to quickly run postgreSQL with necessary
+- Setting Docker compose file to quickly run PostgreSQL with necessary
   environment variables (docker compose file has adminer, but I usually
   connect via pgAdmin). Or running a simple container.
 <pre><br/>Docker run command:
@@ -105,7 +105,7 @@ Let's break this part into :
     * A user changes his ad's information (price off, drop price, additional information)
   * Defining connections between actors and objects:
     * Users can interact with database to store their ads, viewing different ads 
-      allowing sorting by some attributes as: sorting by car maker, price, color etc.
+      allowing sorting by some attributes as: sorting by carmaker, price, color etc.
     * Administrators have rights to modify/delete existing ads or users to avoid fake
     and fraud ads.
     * Some subjects may have access to sales records to analyse which vehicles 
@@ -174,7 +174,7 @@ Let's break this part into :
     * Advertisements constraints:
       * Price - more than 0 (positive)
       * Vin number - unique(But this is for now, since the same car can be sold again)
-      * mileage - more than 0 (positive)
+      * Mileage - more than 0 (positive)
       * Engine volume - more than 0 (positive)
       * Average consumption - more than 0 (positive)
     * Relationships:
